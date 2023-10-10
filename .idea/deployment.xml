@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Brighton Domains" createEmptyFolders="true" persistUploadOnCheckin="false" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="Brighton Domains" createEmptyFolders="true" uploadOnCheckin="c3dd5cc6-48f8-477c-b204-55eedc682981" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="Brighton Domains">
         <serverdata>
@@ -13,5 +13,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="Brighton Domains" />
   </component>
 </project>
