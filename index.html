@@ -118,6 +118,85 @@
                     href="#week1-snapshot">week 1 screenshots</a>.
             </p>
         </article>
+        <article>
+            <header>
+                <h3>Week 3: Understanding HTML Structure</h3>
+                <p>Published:
+                    <time datetime="2023-10-26">October 26, 2023</time>
+                </p>
+            </header>
+            <p>
+                This week we went more in-depth on the DOM and common patterns that web developers use. We also
+                learnt how to create tables and make content look better with formatting. Additionally, we learnt a
+                little bit about how to optimise content for mobile devices.
+            </p>
+            <p>
+                First of all, we learnt about a new type of list. The description list. Its purpose is to describe a
+                list of items, similar to a glossary. From now on, I'll be listing elements that I have learnt more
+                about using this list. So lets start that, here are the elements I have learnt more about this week:
+            </p>
+            <dl>
+                <dt>&lt;nav&gt;</dt>
+                <dd>
+                    Represents the main navigation area of the page. This could be a part of a top bar or in the
+                    sidebar of the webpage.
+                </dd>
+                <dt>&lt;aside&gt;</dt>
+                <dd>
+                    Commonly represents a sidebar or similar content. It's usually not an element that is a part of
+                    the page you are looking at but rather an element that is present throughout most of the site
+                    e.g. Sidebar.
+                </dd>
+                <dt>&lt;footer&gt;</dt>
+                <dd>
+                    Commonly reserved for contact information, references or dates. Something that usually isn't too
+                    important to the main content of the web page.
+                </dd>
+            </dl>
+            <!--Potentially add the Mozilla docs as a reference instead of a link in this paragraph?-->
+            <!--Also add a reference to the legal requirement-->
+            <p>
+                Apparently the reason all of these elements have their own recommendations for content to put in them
+                is because it aids in the ability of screen readers and keyboard navigation to reliably navigate your
+                website. So far I am using my elements based on the recommended usages provided by Mozilla. They
+                maintain an index of all the HTML elements including deprecated and experimental elements. These
+                standards are followed by web developers and are also considered to be acceptable to meet the legal
+                requirement of making websites accessible.
+            </p>
+            <p>
+                Next I learnt about the various types of selectors. Selectors are used by JavaScript and CSS to
+                manipulate web content. They come in the form of the "id" and "class" attributes on HTML elements.
+                Whilst they appear to serve similar functions, they are very different. Here is a table indicating
+                the various differences:
+            </p>
+            <table>
+
+            </table>
+            <!--https://www.w3schools.com/html/html_tables.asp-->
+            <p>
+                It took me longer than I would like to admit to understand how tables work... I am much more familiar
+                with Markdown tables, so I had to follow a guide from W3Schools.
+            </p>
+            <p>
+                The last main thing I learnt this week was about meta information. In the lecture we learnt about the
+                &lt;meta&gt; element, specifically the viewport meta. Meta elements, according to Mozilla, represents
+                metadata information about a web page that cannot be displayed via standard HTML elements e.g. the
+                web page title displayed on this pages tab. The viewport meta element allows the website to be
+                displayed better on mobile because the width of the website is now laid out based upon screen width.
+            </p>
+            <p>
+                To end off, I would like to illustrate the difference that has been made just by adding the viewport
+                modifier. As you can see the text looks narrower to match the phone width, the reason this displays
+                small still is due to the size of the screenshots on the page. Hopefully with a bit of CSS next week
+                this can be fixed!
+            </p>
+            <a id="week3-snapshot"></a>
+            <h4>Screenshots</h4>
+            <img alt="A screenshot of the appearance of the index page on mobile for week 3 without the viewport meta element."
+                 src="images/journal/week3/index-noviewport.png">
+            <img alt="A screenshot of the appearance of the index page on mobile for week 3 with the viewport meta element."
+                 src="images/journal/week3/index-viewport.png">
+        </article>
 
     </main><!--Close main page content -->
 
