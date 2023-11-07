@@ -159,32 +159,77 @@
                 </p>
             </header>
             <p>
-                This week we learnt more elements of HTML and how a web browser handles them and exposes them to
-                JavaScript. The Document Object Model (DOM) is where all HTML elements are stored to when processed
-                by the browser. This exposes the element and basic properties to JavaScript via the Document class,
-                where elements can be looked up using ids and classes.
+                This week we learnt about how to use rich content to style our slight to make certain elements stand
+                out and add some visually appealing content including images and lists.
+            </p>
+            <h4>Navigation Menu</h4>
+            <p>
+                This week I added a navigation menu for the website which should suffice until I have finalised my
+                website’s design. To create a navigation element for the website I needed to use a &lt;nav&gt; element.
+                On top of meeting the criteria and needs of HTML5, the nav element is used by browsers to determine
+                if the navigation bar should be displayed at all or if the navigation elements should only be
+                provided on demand as described in the <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">Mozilla web docs for the nav
+                element</a>. This is done for users with various accessibility settings active so that their
+                accessibility software doesn’t unnecessarily read out navigation elements or focus the navigation
+                menu when there are better ways of accessing this content for users with different needs e.g. <a
+                    href="https://support.apple.com/en-gb/HT204783">Rotor navigation</a>.
             </p>
             <p>
-                We also learnt about many new tags this week. Including:
-            </p>
-            <ul>
-                <li>&lt;ul&gt; and &lt;ol&gt;</li>
-                <li>&lt;strong&gt;</li>
-                <li>&lt;em&gt;</li>
-            </ul>
-            <p>
-                These elements are a part of semantics. There used to be elements for bold or italics, but these
-                elements rarely gave context to the meaning behind what they were doing. Elements also have to be
-                specifically structured and organised so the browser knows when one element has ended so that another
-                can start. This is why <em>most</em> elements have an opening and a closing tag, where the closing
-                tag is written like &lt;p/&gt;. Some elements however are self-closing, for example &lt;img&gt;, this
-                is just written using the opening tag with no '/' symbol at the end (this is a W3C validation error).
+                For each entry I then added an anchor element, each one set with a unique id attribute. This id
+                attribute allows the HTML to uniquely identify an element and allows us to perform operations on it.
+                For example, we could style an element with a specific id or in my case we can reference the anchor
+                with another anchor via it's id like:
             </p>
             <p>
-                To end off, there are no real changes to the website appearance. So if you want to see what the site
-                looked like at week 2, I encourage you to look at the <a
-                    href="#week1-snapshot">week 1 screenshots</a>.
+                &lt;a href=”#entry-week1”&gt;&lt;/a&gt;
             </p>
+            <p>
+                Where "entry-week1" is an id. The # symbol tells the browser to look for an element with that id on
+                the page and to navigate to it when the anchor is clicked. I have used this extensively in the new
+                navigation menu.
+            </p>
+            <p>
+                Currently, this navigation menu is built using the new list elements we learnt. &lt;ul&gt; and
+                &lt;ul&gt;. ul stands for unordered list. Meaning that each element inside the list has a standard
+                bullet point beside it as there is no important order. ol stands for ordered list. Each element will
+                have a number beside it, the number representing its position in the list. I have went with an
+                unordered list as I do not need numbers on top of the week numbers.
+            </p>
+            <h4>Rich Content</h4>
+            <p>
+                Whilst I have outlined the basics above there are better ways to display content in a more
+                visual/rich manner. This can be done by styling the text. This can be done via &lt;strong&gt; and
+                &lt;em&gt;. The strong element wraps around a piece of text and by default gives it a <strong>bold
+                appearance</strong>. The em element or the emphasis element also wraps around a piece of text and
+                by default gives it an <em>italic appearance</em>. However, you can style both elements if you wish
+                to change how this text is displayed. For example, Apple styles the strong element on their website
+                to make it multicoloured:
+            </p>
+            <img alt="A screenshot of the appearance of the contact page for week 1."
+                 height="352"
+                 src="images/journal/week2/apple-strong.png"
+                 width="720">
+            <p>
+                You can also embed images, which I have shown before via the snapshots.
+                These images are required to implement a “src” and “alt” attribute. The “src” attribute points to a
+                location of an image, this can either be hosted on the site itself or in an external url. The “alt”
+                attribute is used by assistive technologies to describe images even when the browser can’t load them
+                or if the user is using a screen reader.
+            </p>
+            <a id="week2-snapshot">
+                <h4>Progress Snapshot</h4>
+            </a>
+            <p>
+                To end off, I have changed the initial headings and added the navigation menu for each entry to the
+                learning journal. However, the rest of the pages remain unchanged. If you want to see what the site
+                looked like at week 2, I encourage you to look at the <a href="#week1-snapshot">week 1 progress
+                snapshot</a>.
+            </p>
+            <img alt="A screenshot of the appearance of the index page for week 2."
+                 height="352"
+                 src="images/journal/week2/index.png"
+                 width="720">
         </article>
         <article>
             <header>
