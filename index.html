@@ -387,9 +387,220 @@
                     <h3>Week 4 + 5: CSS (Finally...)</h3>
                 </a>
                 <p>Published:
-                    <time datetime="2023-10-26">October 26, 2023</time>
+                    <time datetime="2023-11-09">November 9, 2023</time>
                 </p>
             </header>
+            <p>
+                (Due to how closely linked these weeks are and how small week 5 is on it’s own, I have combined week
+                4 and 5 into one entry.)
+            </p>
+            <p>
+                At long last. We have reached CSS. These weeks we learnt the basics of CSS, how they know to style
+                elements and how we link the files themselves to HTML. Additionally, we learnt about using fonts from
+                Google Fonts and how we can now style text using CSS.
+            </p>
+            <h4>CSS File Format</h4>
+            <p>
+                Cascading Style Sheet files or just CSS files, are used to declare how specific elements should be
+                styled on a linked HTML document. They can style: HTML elements, elements with a specific class
+                applied, elements with a specific id or elements that are contained within other elements e.g. only
+                styling &lt;a&gt; elements that are contained within a &lt;li&gt; element.
+            </p>
+            <p>
+                They are specified in the following ways:
+            </p>
+            <ul>
+                <li>
+                    <code>div</code> - Styles all &lt;div&gt; elements on a webpage
+                </li>
+                <li>
+                    <code>.wrapper</code> - Styles all elements with the wrapper class applied
+                </li>
+                <li>
+                    <code>#unique</code> - Styles the element that has “unique” as it’s id
+                </li>
+                <li>
+                    <code>div p</code> - Styles all &lt;p&gt; elements that are contained within a &lt;div&gt; element
+                    no matter how nested they are
+                </li>
+            </ul>
+            <p>
+                There are many other variations, but these are the main 4 that developers use. With this in mind we
+                can move onto the properties.
+            </p>
+            <h4>Properties</h4>
+            <p>
+                There are a ton of properties which you can find on the Mozilla Web Docs that can be used each
+                affecting the way an element is displayed. Properties are declared like so:
+            </p>
+            <p>
+                <code>
+                    p {
+                    color: blue;
+                    font-size: 16px;
+                    }
+                </code>
+            </p>
+            <p>
+                This would produce the following result:
+            </p>
+            <!--TODO: Showcase CSS Usage-->
+            <p>
+                However, we can also override styles or cascade them. If we were to declare these styles in the same
+                file:
+            </p>
+            <p>
+                <code>
+                    p {
+                    color: blue;
+                    font-size: 16px;
+                    }
+                </code>
+            </p>
+            <p>
+                <code>
+                    p {
+                    color: red;
+                    font-size: 2.5em;
+                    }
+                </code>
+            </p>
+            <p>
+                That would produce the following result:
+            </p>
+            <!--TODO: Showcase CSS Usage-->
+            <p>
+                The second group of properties that we used for &lt;p&gt; override those of the first since they
+                conflict. This is useful for accessibility as it means we can provide default styling that can be
+                overridden for different needs.
+            </p>
+            <p>
+                Also notice how we declared that the font size is 2.5em. What is an em? The em is a <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">relative
+                unit</a>
+                of measurement in CSS. This means that instead of setting a fixed size for the font we can size the font
+                relative to something else. With em it means we are calculating the font size based on the font size
+                of the current element. So, let’s say the current font size was 16px when we use 2.5em, we are asking
+                for the font size to be set to 2.5 x 16 which would be 40px. This is very good for responsive design
+                as we can assign a base font size for the document and have all other elements automatically adjust
+                their size accordingly.
+            </p>
+            <h4>Linking CSS</h4>
+            <p>
+                CSS has 3 ways of being implemented. You can implement it in the &lt;head&gt; of a HTML document via
+                the &lt;style&gt; element. You can also add CSS inline to an element using the style attribute which
+                all HTML elements have. Both methods are not recommended. Instead, it’s recommended to create a
+                separate CSS file that you can link inside the &lt;head&gt; using a &lt;link&gt; element like:
+            </p>
+            <p>
+                <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+            </p>
+            <p>
+                This makes it easy to reuse styles. Additionally, it makes it possible to override styles stored in
+                another style sheet since the files also cascade each other. This is useful for normalizing the base
+                appearance of a website using something like normalise.css.
+            </p>
+            <h4>Google Fonts</h4>
+            <p>
+                A very common resource for development of all kinds is <a href="https://fonts.google.com/">Google
+                Fonts</a>. The font you use for a website or system helps define its personality and helps people
+                associate it with your brand. For example, think of Comic Sans which most people associate with
+                either Microsoft Word or Microsoft Paint.
+            </p>
+            <p>
+                Google Fonts contains many fonts which are all copyright free which makes them perfect to use in this
+                project. I was stuck between 3 main fonts:
+            </p>
+            <ul>
+                <li>Lato</li>
+                <li>Nunito</li>
+                <li>Ubuntu</li>
+            </ul>
+            <p>
+                Lato looked quite clean it looked like a standard font you would see in a lot of systems, but this
+                makes it appear more serious and I ended up not wanting to use it for that. Nunito has a much more
+                rounded look to it which makes it look very bubbly and fun but feels very childish which doesn’t
+                really fit for university work. Therefore, I ended up using Ubuntu as I really liked the curve all
+                the letters had whilst still having sharp edges. It’s a nice mix of Lato and Nunito so it’s a fun
+                font that still looks professional. (For those of you who couldn’t even tell I used different fonts I
+                am so sorry you had to read this)
+            </p>
+            <p>
+                To start using Ubuntu inside my CSS file I needed to add the following code to the top of the CSS file:
+            </p>
+            <p>
+                <code>@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');</code>
+            </p>
+            <p>
+                This tells the web browser to import the file add the specific URL. In this case, the font file
+                needed to display Ubuntu. I can then adjust my font by setting the font-family property on my elements:
+            </p>
+            <p>
+                <code>font-family: 'Ubuntu', sans-serif;</code>
+            </p>
+            <p>
+                And just like that, the website font is now Ubuntu. I opted to import the font in the CSS file
+                instead of the &lt;head&gt; like google suggested as it means that I don’t need to import the font each
+                time for each HTML file.
+            </p>
+            <h4>Further Research</h4>
+            <p>
+                So far I have showed having to manually adding each value that you want to set for every single
+                element. If you want to change the foreground colour of every element in a page, it’s easy to do the
+                first time as you need to write the CSS anyway. However, if you wanted to change this in the future
+                it would be very tedious. This is even harder to do if you maintain multiple CSS file like in a
+                larger website. This is what leads to some parts of a website looking older than others, it’s hard to
+                update the CSS values. An example of this is []. To fix this we have variables.
+            </p>
+            <!--TODO: Add a website showing how it's CSS isn't fully synced-->
+            <p>
+                Variables are declared like any other property, usually in the <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">root
+                pseudo-element</a> like:
+            </p>
+            <p>
+                <code>
+                    :root {
+                    --accent-color: blue;
+                    }
+                </code>
+            </p>
+            <p>
+                This creates the variable and makes it available to all other elements in the style sheet. We can
+                then use it by using:
+            </p>
+            <!--TODO: Showcase CSS Usage-->
+            <p>
+                <code>
+                    strong {
+                    color: var(--accent-color);
+                    }
+                </code>
+            </p>
+            <p>
+                This means that now the strong element will be coloured blue, and if we ever want to update it in the
+                future, we can just change the variable value.
+            </p>
+            <p>
+                The benefit of this is that we can now easily maintain the website and keep it consistent across HTML
+                documents. It also means that when we need to adapt the website for different users, we can write
+                less code, and we only need to update the variables instead of cascading every element that needs
+                changed.
+            </p>
+            <p>
+                I have also designed a mobile version of the website:
+            </p>
+            <img
+                    alt="A screenshot of a design wireframe for the learning journal that uses lots of rich media, optimised for a mobile display."
+                    src="images/journal/week45/figma-design-index-mobile.png">
+            <h4>Progress Snapshot</h4>
+            <p>
+                These weeks I added the basic styling for the website as well as changed how the navigation menu
+                looks. I have decided to adopt best practices and design the website to be mobile first. Meaning that
+                the design for the website is made with a phone in mind and will be later adapted to the desktop as
+                shown previously. I have also replaced instances of code in the journal with the &lt;code&gt; element
+                so that they are displayed better.
+            </p>
         </article>
 
     </main>
