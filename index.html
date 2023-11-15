@@ -38,8 +38,9 @@
 
         <article>
             <header>
-                <a id="entry-week1"></a>
-                <h3>Week 1: Getting Started</h3>
+                <a id="entry-week1">
+                    <h3>Week 1: Getting Started</h3>
+                </a>
                 <p>Published:
                     <time datetime="2023-10-12">October 12, 2023</time>
                 </p>
@@ -136,24 +137,27 @@
                 To end off, I would like to keep a record of the visual progress of the website. Currently, all
                 webpages look nearly identical but over time as I learn CSS I hope for these pages to look amazing.
             </p>
-            <img alt="A screenshot of the appearance of the index page for week 1."
-                 height="352"
-                 src="images/journal/week1/index.png"
-                 width="720">
-            <img alt="A screenshot of the appearance of the tutorial page for week 1."
-                 height="352"
-                 src="images/journal/week1/tutorial.png"
-                 width="720">
-            <img alt="A screenshot of the appearance of the contact page for week 1."
-                 height="352"
-                 src="images/journal/week1/contact.png"
-                 width="720">
-
+            <figure>
+                <img alt="A screenshot of the appearance of the index page for week 1."
+                     src="images/journal/week1/index.png">
+                <figcaption>Learning Journal</figcaption>
+            </figure>
+            <figure>
+                <img alt="A screenshot of the appearance of the tutorial page for week 1."
+                     src="images/journal/week1/tutorial.png">
+                <figcaption>Tutorial</figcaption>
+            </figure>
+            <figure>
+                <img alt="A screenshot of the appearance of the contact page for week 1."
+                     src="images/journal/week1/contact.png">
+                <figcaption>Contact Me</figcaption>
+            </figure>
         </article>
         <article>
             <header>
-                <a id="entry-week2"></a>
-                <h3>Week 2: Richer Content</h3>
+                <a id="entry-week2">
+                    <h3>Week 2: Richer Content</h3>
+                </a>
                 <p>Published:
                     <time datetime="2023-10-18">October 18, 2023</time>
                 </p>
@@ -206,10 +210,13 @@
                 to change how this text is displayed. For example, Apple styles the strong element on their website
                 to make it multicoloured:
             </p>
-            <img alt="A screenshot of the appearance of the contact page for week 1."
-                 height="352"
-                 src="images/journal/week2/apple-strong.png"
-                 width="720">
+            <figure>
+                <img alt="A screenshot of Apple store website, emphasising the use of the strong element."
+                     src="images/journal/week2/apple-strong.png">
+                <figcaption>If you look in the inspector you can see that the word design is just a &lt;strong&gt;
+                    element.
+                </figcaption>
+            </figure>
             <p>
                 You can also embed images, which I have shown before via the snapshots.
                 These images are required to implement a “src” and “alt” attribute. The “src” attribute points to a
@@ -226,97 +233,133 @@
                 looked like at week 2, I encourage you to look at the <a href="#week1-snapshot">week 1 progress
                 snapshot</a>.
             </p>
-            <img alt="A screenshot of the appearance of the index page for week 2."
-                 height="352"
-                 src="images/journal/week2/index.png"
-                 width="720">
+            <figure>
+                <img alt="A screenshot of the appearance of the index page for week 2."
+                     src="images/journal/week2/index.png">
+                <figcaption>Added navigation menu and changed headings.</figcaption>
+            </figure>
         </article>
         <article>
             <header>
-                <a id="entry-week3"></a>
-                <h3>Week 3: Understanding HTML Structure</h3>
+                <a id="entry-week3">
+                    <h3>Week 3: Richer Content + Metadata</h3>
+                </a>
                 <p>Published:
                     <time datetime="2023-10-26">October 26, 2023</time>
                 </p>
             </header>
             <p>
-                This week we went more in-depth on the DOM and common patterns that web developers use. We also
-                learnt how to create tables and make content look better with formatting. Additionally, we learnt a
-                little bit about how to optimise content for mobile devices.
+                This week we learnt how to make even richer content for our website and how to make browsers display
+                more information about our website in their UI with metadata.
+            </p>
+            <h4>Metadata</h4>
+            <p>
+                In the lecture we learnt about the &lt;meta&gt; element, specifically the viewport meta. Meta elements,
+                according to Mozilla, represents metadata information about a web page that cannot be displayed via
+                standard HTML elements e.g. the web page title displayed on this pages tab. The viewport meta element
+                allows the website to be displayed better on mobile because the width of the website is now laid out
+                based upon screen width which I have added this week. Additionally, we can set the title of a website
+                or images on it like the favicon (the small icon beside the title in the webpages tab). I have set
+                the title of all my pages but have omitted the favicon for now as I still need to make it.
+            </p>
+            <h4>Richer Content</h4>
+            <p>
+                We also learnt about more elements that are supposed to better structure our content. The first of
+                which is a description list. This list allows list elements to have a description attached to them. I
+                have used this later this week when I talk about the various websites used for design inspiration
+                for the final website.
             </p>
             <p>
-                First of all, we learnt about a new type of list. The description list. Its purpose is to describe a
-                list of items, similar to a glossary. From now on, I'll be listing elements that I have learnt more
-                about using this list. So lets start that, here are the elements I have learnt more about this week:
+                Secondly, we have tables. A table can be very useful for structuring information that should be
+                compared or laid out in a structured way. We have been asked to add our timetables to our site. I
+                have added this to the “Contact Me” page in case you wish to see it. Currently, it doesn’t really look
+                like a table. There is no default styling for it so currently it looks very weird. I will fix this
+                when I implement CSS later. It took me longer than I would like to admit to understand how tables
+                work... I am much more familiar with Markdown tables, so I had to follow a <a
+                    href="https://www.w3schools.com/html/html_tables.asp">guide from W3Schools</a>.
+            </p>
+            <p>
+                The third element we learnt of was the &lt;cite&gt; element. This is designed for referencing or
+                citing a piece of work. By default, it displays its contents in italics. I currently have no use for
+                this element and so it has been omitted. Finally we learnt about the &lt;figure&gt; element. This
+                element is designed to be used with images, tables and other elements that would benefit from an
+                additional explanation with a caption. I have updated all the current images in the website to
+                adopt the figure element.
+            </p>
+            <h4>Interactive Content</h4>
+            <p>
+                We also learnt that we could turn images into links, this can be done by adding an &lt;img&gt; element
+                into a &lt;a&gt; element. This doesn’t style the image in any way, but it does make it interactive and
+                clickable. For example, clicking on the image of the university below will take you to the University
+                of Brighton website.
+            </p>
+            <a href="https://www.brighton.ac.uk/index.aspx">
+                <img alt="Photo of a building at the University of Brighton."
+                     src="images/journal/week3/brighton-uni.jpg">
+            </a>
+            <p>
+                This way the links on a website don’t stick out like a sore thumb in that bright blue colour. We can
+                present them very nicely without having to first style them.
+            </p>
+            <h4>Further Research</h4>
+            <p>
+                So far, I have been haphazardly adding these elements to my website but given that next week we are
+                starting HTML I thought it would be best to start designing what the final website should look like.
+            </p>
+            <p>
+                To do this I am going to be using a UI design tool known as <a href="https://www.figma.com/about/">Figma
+            </a>. Figma was designed for making interactive prototypes of systems very quickly and easily. I have
+                previous experience in using Figma from designing my own apps as well as creating concept designs for
+                the University’s own apps (only for fun I’m afraid).
+            </p>
+            <p>
+                I started off by researching two different styles of websites. An article-based website, like how the
+                learning journal should look, and a more media focused site similar to an online store. My main
+                references were:
             </p>
             <dl>
-                <dt>&lt;nav&gt;</dt>
-                <dd>
-                    Represents the main navigation area of the page. This could be a part of a top bar or in the
-                    sidebar of the webpage.
-                </dd>
-                <dt>&lt;aside&gt;</dt>
-                <dd>
-                    Commonly represents a sidebar or similar content. It's usually not an element that is a part of
-                    the page you are looking at but rather an element that is present throughout most of the site
-                    e.g. Sidebar.
-                </dd>
-                <dt>&lt;footer&gt;</dt>
-                <dd>
-                    Commonly reserved for contact information, references or dates. Something that usually isn't too
-                    important to the main content of the web page.
-                </dd>
+                <dt><a href="https://www.theverge.com">The Verge</a></dt>
+                <dd>The Verge is a news site that specialises in covering technology and reviewing products.</dd>
+                <dt><a href="https://procreate.com">Procreate</a></dt>
+                <dd>Procreate is a raster-based digital art app for the iPad.</dd>
+                <dt><a href="https://www.apple.com/uk/">Apple</a></dt>
+                <dd>Apple is a hardware and software company specialising in consumer hardware e.g. phones.</dd>
             </dl>
-            <!--Potentially add the Mozilla docs as a reference instead of a link in this paragraph?-->
-            <!--Also add a reference to the legal requirement-->
             <p>
-                Apparently the reason all of these elements have their own recommendations for content to put in them
-                is because it aids in the ability of screen readers and keyboard navigation to reliably navigate your
-                website. So far I am using my elements based on the recommended usages provided by Mozilla. They
-                maintain an index of all the HTML elements including deprecated and experimental elements. These
-                standards are followed by web developers and are also considered to be acceptable to meet the legal
-                requirement of making websites accessible.
+                The Verge is an article-based website that heavily included whitespace around the main body of text.
+                It also had what looked like many asides for ads, promoting other articles, adding additional context
+                and more. I used this site as the basis for my own article style and… well… it doesn’t look quite right:
+            </p>
+            <figure>
+                <img alt="A screenshot of a design wireframe for the learning journal that resembles an article based website."
+                     src="images/journal/week3/figma-design-index-article.png">
+                <figcaption>A screenshot of a design wireframe for the learning journal that resembles an article based
+                    website.
+                </figcaption>
+            </figure>
+            <p>
+                The main header for the learning journal either didn’t take up enough space or took up too much. The
+                “Entries” aside navigation also didn’t feel right. The articles were weirdly cropped off by it and
+                the aside wasn’t fully utilised which made the overall layout feel awkward.
             </p>
             <p>
-                Next I learnt about the various types of selectors. Selectors are used by JavaScript and CSS to
-                manipulate web content. They come in the form of the "id" and "class" attributes on HTML elements.
-                Whilst they appear to serve similar functions, they are very different. Here is a table indicating
-                the various differences:
+                My second attempt involved referencing the websites for Procreate and Apple. These sites have more
+                emphasis on media like photos, videos and animations to engage the reader. So, I decided to take some
+                design cues from them and develop a design that looks more vibrant and colourful:
             </p>
-            <table>
-                <tr>
-                    <th></th>
-                    <th>id</th>
-                    <th>class</th>
-                </tr>
-                <tr>
-                    <td>Uniqueness</td>
-                    <td>Only used once</td>
-                    <td>Used multiple times</td>
-                </tr>
-                <tr>
-                    <td>Use</td>
-                    <td>Uniquely identify an element</td>
-                    <td>Perform styling and modifications to a group of elements</td>
-                </tr>
-                <tr>
-                    <td>Accessed by</td>
-                    <td>JavaScript and CSS</td>
-                    <td>JavaScript and CSS</td>
-                </tr>
-            </table>
-            <!--https://www.w3schools.com/html/html_tables.asp-->
-            <p>
-                It took me longer than I would like to admit to understand how tables work... I am much more familiar
-                with Markdown tables, so I had to follow a guide from W3Schools.
-            </p>
-            <p>
-                The last main thing I learnt this week was about meta information. In the lecture we learnt about the
-                &lt;meta&gt; element, specifically the viewport meta. Meta elements, according to Mozilla, represents
-                metadata information about a web page that cannot be displayed via standard HTML elements e.g. the
-                web page title displayed on this pages tab. The viewport meta element allows the website to be
-                displayed better on mobile because the width of the website is now laid out based upon screen width.
-            </p>
+            <figure>
+                <img alt="A screenshot of a design wireframe for the learning journal that uses lots of rich media."
+                     src="images/journal/week3/figma-design-index-media-0.jpg">
+                <figcaption>Hero banner.</figcaption>
+            </figure>
+            <figure>
+                <img alt="A screenshot of the same design wireframe shown last but scrolled down to make article content visible."
+                     src="images/journal/week3/figma-design-index-media-1.jpg">
+                <figcaption>Article content.</figcaption>
+            </figure>
+            <a id="week3-snapshot">
+                <h4>Progress Snapshot</h4>
+            </a>
             <p>
                 To end off, I would like to illustrate the difference that has been made just by adding the viewport
                 modifier. As you can see the text looks narrower to match the phone width, the reason this displays
