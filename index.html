@@ -444,7 +444,8 @@
             <p>
                 This would produce the following result:
             </p>
-            <!--TODO: Showcase CSS Usage-->
+            <img alt="Text saying 'I am blue!' that has been coloured blue by CSS."
+                 src="images/journal/week45/property-css.png">
             <p>
                 However, we can also override styles or cascade them. If we were to declare these styles in the same
                 file:
@@ -468,7 +469,8 @@
             <p>
                 That would produce the following result:
             </p>
-            <!--TODO: Showcase CSS Usage-->
+            <img alt="Text saying 'I am now red!' that has been coloured red by CSS."
+                 src="images/journal/week45/cascade-css.png">
             <p>
                 The second group of properties that we used for &lt;p&gt; override those of the first since they
                 conflict. This is useful for accessibility as it means we can provide default styling that can be
@@ -550,9 +552,10 @@
                 first time as you need to write the CSS anyway. However, if you wanted to change this in the future
                 it would be very tedious. This is even harder to do if you maintain multiple CSS file like in a
                 larger website. This is what leads to some parts of a website looking older than others, it’s hard to
-                update the CSS values. An example of this is []. To fix this we have variables.
+                update the CSS values. An example of this is <a href="https://www.google.com/advanced_search">Google
+                Advanced Search</a>. It uses an older version of Google's design language and has not been updated to
+                their modern design language like many of their other sites. To fix this we have variables.
             </p>
-            <!--TODO: Add a website showing how it's CSS isn't fully synced-->
             <p>
                 Variables are declared like any other property, usually in the <a
                     href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">root
@@ -569,10 +572,9 @@
                 This creates the variable and makes it available to all other elements in the style sheet. We can
                 then use it by using:
             </p>
-            <!--TODO: Showcase CSS Usage-->
             <p>
                 <code>
-                    strong {
+                    p {
                     color: var(--accent-color);
                     }
                 </code>
