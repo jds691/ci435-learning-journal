@@ -62,8 +62,7 @@ main {
 .top-nav a {
     color: inherit;
     text-decoration: none;
-    /*TODO: Error - Invalid Property*/
-    text-shadow: var(--default-drop-shadow);
+    text-shadow: black 0 4px 4px;
 }
 
 .top-nav a:hover {
