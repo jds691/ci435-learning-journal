@@ -1,0 +1,63 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/*Variables*/
+:root {
+    --accent-colour: rgb(120, 93, 226);
+    --primary-colour: black;
+    --alt-primary-colour: white;
+}
+
+/*Elements*/
+body {
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--alt-primary-colour);
+}
+
+/*Classes*/
+.top-nav {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 1em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.top-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    color: var(--accent-colour);
+}
+
+.hero {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#wrapper {
+    background: rgba(0, 0, 0, 0.50);;
+    max-width: 100%;
+}
+
+/*UNCOMMENT AFTER CREATING WEEK 4+ 5 SCREENSHOTS*/
+/*Queries*/
+
+/*Desktop - Largest*/
+/*
+@media (min-width: 60em) {
+    #wrapper {
+        align-content: center;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+*/
