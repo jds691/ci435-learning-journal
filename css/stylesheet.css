@@ -1,50 +1,153 @@
+/*References
+Backgrounds - https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a/
+*/
+
 /*Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 /*Variables*/
 :root {
+    /*Colour*/
     --accent-colour: rgb(120, 93, 226);
     --primary-colour: black;
     --alt-primary-colour: white;
+
+    /*Appearance*/
+    --border-radius: 20px;
+    --default-drop-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    /*Fonts*/
+    --default-font-family: 'Ubuntu', sans-serif;
+    --base-font-size: 20px;
 }
 
 /*Elements*/
-body {
+html {
     background-color: black;
-    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    font-family: var(--default-font-family);
+    font-size: var(--base-font-size);
     color: var(--alt-primary-colour);
+}
+
+table {
+    display: none;
+}
+
+main {
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 /*Classes*/
 .top-nav {
-    list-style-type: none;
-    display: flex;
-    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
     padding: 16px;
+}
+
+.top-nav menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
     align-items: flex-start;
-    gap: 1em;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    gap: 16px;
+    list-style-type: none;
 }
 
 .top-nav a {
     color: inherit;
     text-decoration: none;
+    /*TODO: Error - Invalid Property*/
+    text-shadow: var(--default-drop-shadow);
 }
 
 .top-nav a:hover {
     color: var(--accent-colour);
 }
 
+.entry-nav {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    border-radius: var(--border-radius);
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.7);
+    align-self: stretch;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.entry-nav menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.entry-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.entry-nav a:hover {
+    color: var(--accent-colour);
+}
+
 .hero {
     display: flex;
     height: 100vh;
+    gap: 0;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 16px;
+}
+
+.floating-action-button {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    padding: 1rem;
+    background: var(--accent-colour);
+    border-radius: 100%;
+    box-shadow: var(--default-drop-shadow);
+    color: var(--alt-primary-colour);
+}
+
+.floating-action-button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circles-background {
+    background: radial-gradient(
+            rgb(33, 179, 136) 40px,
+            transparent 0,
+            transparent 100%
+    ),
+    radial-gradient(
+            rgb(28, 82, 138) 40px,
+            transparent 0,
+            transparent 100%
+    ),
+    radial-gradient(
+            rgb(167, 8, 38) 40px,
+            transparent 0,
+            transparent 100%
+    ), snow;
+    background-blend-mode: multiply;
+    background-size: 100px 100px;
+    background-position: 0 0, 33px 33px, -33px -33px;
 }
 
 #wrapper {
-    background: rgba(0, 0, 0, 0.50);;
     max-width: 100%;
 }
 
@@ -53,7 +156,23 @@ body {
 
 /*Desktop - Largest*/
 /*
+@media (min-width: 50em) {
+    .mobile {
+        display: none;
+    }
+
+    #wrapper {
+        align-content: center;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 60em) {
+    .mobile {
+        display: none;
+    }
+
     #wrapper {
         align-content: center;
         max-width: 60%;
