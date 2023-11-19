@@ -33,7 +33,7 @@
                 <li><a href="#entry-week2">Week 2: Richer Content</a></li>
                 <li><a href="#entry-week3">Week 3: Richer Content + Metadata</a></li>
                 <li><a href="#entry-week45">Week 4 + 5: CSS (Finally...)</a></li>
-                <!--<li><a href="#entry-week6">Week 6: Adding Responsive Design</a></li>-->
+                <li><a href="#entry-week6">Week 6: Adding Responsive Design</a></li>
             </menu>
         </nav>
     </header>
@@ -609,6 +609,55 @@
             <img alt="A screenshot of the Learning Journal, now styled."
                  src="images/journal/week45/index.png">
         </article>
+            <article>
+                <header>
+                    <a id="entry-week6">
+                        <h3>Week 6: Adding Responsive Design</h3>
+                    </a>
+                    <p>Published:
+                        <time datetime="2023-11-16">November 16, 2023</time>
+                    </p>
+                </header>
+                <p>
+                    This week we learnt how to adapt a website to accommodate different users’ needs and their
+                    devices by using media queries. We also learnt how to finally adjust our images to fit within the
+                    size of the web page and containing elements.
+                </p>
+                <h4>Media Queries</h4>
+                <p>
+                    So far, the website has been developed using a mobile first approach. Meaning that the website is
+                    built to accommodate mobile devices first, and it is later adapted to take advantage of the
+                    capabilities of a desktop and similar devices e.g. large screens.
+                    It has also so far been developed for users that do not have any additional needs such as
+                    assistive technologies for those visually impaired.
+                </p>
+                <p>
+                    To accommodate both needs we can use media queries. Media queries allow CSS rules to cascade each
+                    other based on information provided by the browser. This information can include properties about
+                    the device such as screen size or browser user agent, the type of device or properties that the
+                    browser provides on behalf of the user. These properties normally include accessibility
+                    information of various types. Mozilla has an excellent guide for accessibility. This guide
+                    includes many different media queries that can be used but it is quite extensive. I will be
+                    implementing the various media queries as I come across parts of the site that need to have
+                    alternative considerations. So far, I have determined that I will need ‘prefers-reduced-motion’
+                    and ‘prefers-reduced-transparency’ due to the intended design of my website.
+                </p>
+                <h4>Flexible Images</h4>
+                <p>
+                    Another issue with the site is the images. Currently they extend beyond the borders of the site.
+                    On desktop they don’t fit perfectly inside the wrapper, whilst on mobile the images stretch
+                    beyond the body of text and cause the dreaded horizontal scroll to occur. To fix this we can use
+                    CSS. There is a property called ‘max-width’. According to Mozilla there is no max width by
+                    default. To keep the image responsive, I am using the relative unit of 100%. Whilst at first it
+                    seems like the image might be restricted to 100% of the screen width it is actually restricted to
+                    100% of its parent therefore the width of the image is automatically restricted to the width of
+                    the wrapper.
+                </p>
+                <h4>Progress Snapshot</h4>
+                <p>
+                    To end off, the site has now been adjusted to run well on the desktop like previously designed.
+                </p>
+            </article>
         </div>
     </main>
 <footer>
