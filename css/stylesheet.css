@@ -144,7 +144,7 @@ img {
             rgb(167, 8, 38) 40px,
             transparent 0,
             transparent 100%
-    ), snow;
+    );
     background-blend-mode: multiply;
     background-size: 100px 100px;
     background-position: 0 0, 33px 33px, -33px -33px;
