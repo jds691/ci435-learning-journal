@@ -24,6 +24,7 @@ Backgrounds - https://blog.logrocket.com/advanced-effects-with-css-background-bl
 /*Elements*/
 html {
     background-color: black;
+    scroll-behavior:smooth
 }
 
 body {
@@ -73,6 +74,10 @@ img {
     color: var(--accent-colour);
 }
 
+.hero h1 {
+    margin: 0;
+}
+
 .entry-nav {
     display: flex;
     padding: 16px;
@@ -81,10 +86,6 @@ img {
     border: 1px solid #FFF;
     background: rgba(0, 0, 0, 0.7);
     align-self: stretch;
-}
-
-.hero h1 {
-    margin: 0;
 }
 
 .entry-nav menu {
@@ -112,18 +113,21 @@ img {
     padding: 16px;
 }
 
+.icon-button {
+    background: var(--accent-colour);
+    border-radius: 100%;
+    padding: 1rem;
+    color: var(--alt-primary-colour);
+}
+
 .floating-action-button {
     position: fixed;
     bottom: 16px;
     right: 16px;
-    padding: 1rem;
-    background: var(--accent-colour);
-    border-radius: 100%;
     box-shadow: var(--default-drop-shadow);
-    color: var(--alt-primary-colour);
 }
 
-.floating-action-button span {
+.icon-button span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,6 +154,10 @@ img {
     background-position: 0 0, 33px 33px, -33px -33px;
 }
 
+.not-mobile {
+    display: none;
+}
+
 #wrapper {
     max-width: 100%;
 }
@@ -157,13 +165,32 @@ img {
 /*UNCOMMENT AFTER CREATING WEEK 4+ 5 SCREENSHOTS*/
 /*Queries*/
 
-/*Desktop - Largest*/
-/*
+/*Tablet - Medium*/
 @media (min-width: 50em) {
     .mobile {
         display: none;
     }
 
+    .not-mobile {
+        display: inherit;
+    }
+
+    .entry-nav menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .entry-nav {
+        position: sticky;
+        top: 16px;
+        border-radius: 500px;
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.3);
+        box-shadow: var(--default-drop-shadow);
+    }
+
     #wrapper {
         align-content: center;
         max-width: 60%;
@@ -171,15 +198,6 @@ img {
     }
 }
 
+/*Desktop - Largest*/
 @media (min-width: 60em) {
-    .mobile {
-        display: none;
-    }
-
-    #wrapper {
-        align-content: center;
-        max-width: 60%;
-        margin: 0 auto;
-    }
 }
-*/
