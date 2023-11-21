@@ -223,7 +223,7 @@
                 Currently, this navigation menu is built using the new list elements we learnt. &lt;ul&gt; and
                 &lt;ul&gt;. ul stands for unordered list. Meaning that each element inside the list has a standard
                 bullet point beside it as there is no important order. ol stands for ordered list. Each element will
-                have a number beside it, the number representing its position in the list. I have went with an
+                have a number beside it, the number representing its position in the list. I have gone with an
                 unordered list as I do not need numbers on top of the week numbers.
             </p>
             <h4>Rich Content</h4>
@@ -307,14 +307,14 @@
             <p>
                 The third element we learnt of was the &lt;cite&gt; element. This is designed for referencing or
                 citing a piece of work. By default, it displays its contents in italics. I currently have no use for
-                this element and so it has been omitted. Finally we learnt about the &lt;figure&gt; element. This
+                this element and so it has been omitted. Finally, we learnt about the &lt;figure&gt; element. This
                 element is designed to be used with images, tables and other elements that would benefit from an
                 additional explanation with a caption. I have updated all the current images in the website to
                 adopt the figure element.
             </p>
             <h4>Interactive Content</h4>
             <p>
-                We also learnt that we could turn images into links, this can be done by adding an &lt;img&gt; element
+                We also learnt that we could turn images into links, this can be done by adding a &lt;img&gt; element
                 into a &lt;a&gt; element. This doesn’t style the image in any way, but it does make it interactive and
                 clickable. For example, clicking on the image of the university below will take you to the University
                 of Brighton website.
@@ -413,7 +413,7 @@
                 </p>
             </header>
             <p>
-                (Due to how closely linked these weeks are and how small week 5 is on it’s own, I have combined week
+                (Due to how closely linked these weeks are and how small week 5 is on its own, I have combined week
                 4 and 5 into one entry.)
             </p>
             <p>
@@ -503,7 +503,7 @@
                     href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">relative
                 unit</a>
                 of measurement in CSS. This means that instead of setting a fixed size for the font we can size the font
-                relative to something else. With em it means we are calculating the font size based on the font size
+                relative to something else. With em, it means we are calculating the font size based on the font size
                 of the current element. So, let’s say the current font size was 16px when we use 2.5em, we are asking
                 for the font size to be set to 2.5 x 16 which would be 40px. This is very good for responsive design
                 as we can assign a base font size for the document and have all other elements automatically adjust
@@ -511,7 +511,7 @@
             </p>
             <h4>Linking CSS</h4>
             <p>
-                CSS has 3 ways of being implemented. You can implement it in the &lt;head&gt; of a HTML document via
+                CSS has 3 ways of being implemented. You can implement it in the &lt;head&gt; of an HTML document via
                 the &lt;style&gt; element. You can also add CSS inline to an element using the style attribute which
                 all HTML elements have. Both methods are not recommended. Instead, it’s recommended to create a
                 separate CSS file that you can link inside the &lt;head&gt; using a &lt;link&gt; element like:
@@ -522,7 +522,7 @@
             <p>
                 This makes it easy to reuse styles. Additionally, it makes it possible to override styles stored in
                 another style sheet since the files also cascade each other. This is useful for normalizing the base
-                appearance of a website using something like normalise.css.
+                appearance of a website using something like normalize.css.
             </p>
             <h4>Google Fonts</h4>
             <p>
@@ -656,15 +656,15 @@
                     the device such as screen size or browser user agent, the type of device or properties that the
                     browser provides on behalf of the user. These properties normally include accessibility
                     information of various types. Mozilla has an excellent guide for accessibility. This guide
-                    includes many different media queries that can be used but it is quite extensive. I will be
+                    includes many different media queries that can be used, but it is quite extensive. I will be
                     implementing the various media queries as I come across parts of the site that need to have
                     alternative considerations. So far, I have determined that I will need ‘prefers-reduced-motion’
                     and ‘prefers-reduced-transparency’ due to the intended design of my website.
                 </p>
                 <h4>Flexible Images</h4>
                 <p>
-                    Another issue with the site is the images. Currently they extend beyond the borders of the site.
-                    On desktop they don’t fit perfectly inside the wrapper, whilst on mobile the images stretch
+                    Another issue with the site is the images. Currently, they extend beyond the borders of the site.
+                    On desktop, they don’t fit perfectly inside the wrapper, whilst on mobile the images stretch
                     beyond the body of text and cause the dreaded horizontal scroll to occur. To fix this we can use
                     CSS. There is a property called ‘max-width’. According to Mozilla there is no max width by
                     default. To keep the image responsive, I am using the relative unit of 100%. Whilst at first it
@@ -676,6 +676,8 @@
                 <p>
                     To end off, the site has now been adjusted to run well on the desktop like previously designed.
                 </p>
+                <img src="images/journal/week6/index.png"
+                     alt="A screenshot of the Learning Journal, now optimised for desktop.">
             </article>
         </div>
     </main>
