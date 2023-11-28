@@ -2,6 +2,9 @@
 Backgrounds - https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a/
 */
 
+/*TODO: <code> text overflows always*/
+/*TODO: Card flex layout breaks on Safari*/
+
 /*Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
@@ -73,6 +76,18 @@ figcaption {
 }
 
 /*Classes*/
+.group-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group-item {
+    box-sizing: border-box; /*Includes padding and border when calculating width*/
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%
+}
+
 .top-nav {
     margin: 0;
     top: 0;
@@ -131,6 +146,7 @@ figcaption {
 
 .hero {
     display: flex;
+    /*TODO: Crop at a certain height so it isn't ridiculous*/
     height: 100vh;
     gap: 0;
     flex-direction: column;
@@ -191,8 +207,8 @@ figcaption {
 /*UNCOMMENT AFTER CREATING WEEK 4+ 5 SCREENSHOTS*/
 /*Queries*/
 
-/*Tablet - Medium*/
-@media (min-width: 50em) {
+/*Tablet - Portait*/
+@media (min-width: 40em) {
     .mobile {
         display: none;
     }
@@ -201,8 +217,17 @@ figcaption {
         display: inherit;
     }
 
+    .entry-nav a {
+        text-align: center;
+    }
+
+    .entry-nav li {
+        text-align: center; /*https://www.andy-howard.com/verticalAndHorizontalAlignment/index.html#*/
+    }
+
     .entry-nav menu {
         display: flex;
+        justify-content: space-between; /*https://css-tricks.com/almanac/properties/j/justify-content/*/
         flex-direction: row;
         align-items: center;
         gap: 1rem;
@@ -218,13 +243,20 @@ figcaption {
         box-shadow: var(--default-drop-shadow);
     }
 
+    .group-item {
+        flex: 1 1 calc(100% / 2); /*Allows up to 3 items in a single row but also allows elements to expand when there are less then 3: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Mastering_wrapping_of_flex_items#wrapping_and_flex-direction*/
+    }
+
     #wrapper {
         align-content: center;
-        max-width: 60%;
+        max-width: 70%;
         margin: 0 auto;
     }
 }
 
-/*Desktop - Largest*/
+/*Tablet - Landscape+*/
 @media (min-width: 60em) {
+    .group-item {
+        flex: 1 1 calc(100% / 3); /*Allows up to 3 items in a single row but also allows elements to expand when there are less then 3: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Mastering_wrapping_of_flex_items#wrapping_and_flex-direction*/
+    }
 }
