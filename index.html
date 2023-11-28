@@ -36,11 +36,14 @@
                 <li><a href="#entry-week3">Week 3: Richer Content + Metadata</a></li>
                 <li><a href="#entry-week45">Week 4 + 5: CSS (Finally...)</a></li>
                 <li><a href="#entry-week6">Week 6: Adding Responsive Design</a></li>
+                <li><a href="#entry-week7">Week 7: Flexible Media</a></li>
+                <li><a href="#entry-week8">Week 8: Layouts + Positioning</a></li>
             </menu>
         </nav>
     </header>
 
     <main>
+        <!--TODO: This looks weird in iPad portrait-->
         <nav class="entry-nav not-mobile">
             <menu>
                 <li>
@@ -55,6 +58,11 @@
                 <li><a href="#entry-week3">Week 3</a></li>
                 <li><a href="#entry-week45">Week 4 + 5</a></li>
                 <li><a href="#entry-week6">Week 6</a></li>
+                <li><a href="#entry-week7">Week 7</a></li>
+                <li><a href="#entry-week8">Week 8</a></li>
+                <li><a href="#entry-week8">Week 9</a></li>
+                <li><a href="#entry-week8">Week 10</a></li>
+                <li><a href="#entry-week8">Week 11</a></li>
             </menu>
         </nav>
 
@@ -162,21 +170,23 @@
                 To end off, I would like to keep a record of the visual progress of the website. Currently, all
                 webpages look nearly identical but over time as I learn CSS I hope for these pages to look amazing.
             </p>
-            <figure>
-                <img alt="A screenshot of the appearance of the index page for week 1."
-                     src="images/journal/week1/index.png">
-                <figcaption>Learning Journal</figcaption>
-            </figure>
-            <figure>
-                <img alt="A screenshot of the appearance of the tutorial page for week 1."
-                     src="images/journal/week1/tutorial.png">
-                <figcaption>Tutorial</figcaption>
-            </figure>
-            <figure>
-                <img alt="A screenshot of the appearance of the contact page for week 1."
-                     src="images/journal/week1/contact.png">
-                <figcaption>Contact Me</figcaption>
-            </figure>
+            <div class="group-container">
+                <figure class="group-item">
+                    <img alt="A screenshot of the appearance of the index page for week 1."
+                         src="images/journal/week1/index.png">
+                    <figcaption>Learning Journal</figcaption>
+                </figure>
+                <figure class="group-item">
+                    <img alt="A screenshot of the appearance of the tutorial page for week 1."
+                         src="images/journal/week1/tutorial.png">
+                    <figcaption>Tutorial</figcaption>
+                </figure>
+                <figure class="group-item">
+                    <img alt="A screenshot of the appearance of the contact page for week 1."
+                         src="images/journal/week1/contact.png">
+                    <figcaption>Contact Me</figcaption>
+                </figure>
+            </div>
         </article>
         <article>
             <header>
@@ -374,16 +384,18 @@
                 emphasis on media like photos, videos and animations to engage the reader. So, I decided to take some
                 design cues from them and develop a design that looks more vibrant and colourful:
             </p>
-            <figure>
-                <img alt="A screenshot of a design wireframe for the learning journal that uses lots of rich media."
-                     src="images/journal/week3/figma-design-index-media-0.jpg">
-                <figcaption>Hero banner.</figcaption>
-            </figure>
-            <figure>
-                <img alt="A screenshot of the same design wireframe shown last but scrolled down to make article content visible."
-                     src="images/journal/week3/figma-design-index-media-1.jpg">
-                <figcaption>Article content.</figcaption>
-            </figure>
+            <div class="group-container">
+                <figure class="group-item">
+                    <img alt="A screenshot of a design wireframe for the learning journal that uses lots of rich media."
+                         src="images/journal/week3/figma-design-index-media-0.jpg">
+                    <figcaption>Hero banner.</figcaption>
+                </figure>
+                <figure class="group-item">
+                    <img alt="A screenshot of the same design wireframe shown last but scrolled down to make article content visible."
+                         src="images/journal/week3/figma-design-index-media-1.jpg">
+                    <figcaption>Article content.</figcaption>
+                </figure>
+            </div>
             <a id="week3-snapshot">
                 <h3>Progress Snapshot</h3>
             </a>
@@ -393,16 +405,18 @@
                 small still is due to the size of the screenshots on the page. Hopefully with a bit of CSS next week
                 this can be fixed!
             </p>
-            <figure>
-                <img alt="A screenshot of the appearance of the index page on mobile for week 3 without the viewport meta element."
-                     src="images/journal/week3/index-no-viewport.jpeg">
-                <figcaption>Without viewport.</figcaption>
-            </figure>
-            <figure>
-                <img alt="A screenshot of the appearance of the index page on mobile for week 3 with the viewport meta element."
-                     src="images/journal/week3/index-viewport.jpeg">
-                <figcaption>With viewport.</figcaption>
-            </figure>
+            <div class="group-container">
+                <figure class="group-item">
+                    <img alt="A screenshot of the appearance of the index page on mobile for week 3 without the viewport meta element."
+                         src="images/journal/week3/index-no-viewport.jpeg">
+                    <figcaption>Without viewport.</figcaption>
+                </figure>
+                <figure class="group-item">
+                    <img alt="A screenshot of the appearance of the index page on mobile for week 3 with the viewport meta element."
+                         src="images/journal/week3/index-viewport.jpeg">
+                    <figcaption>With viewport.</figcaption>
+                </figure>
+            </div>
         </article>
         <article>
             <header>
@@ -457,44 +471,58 @@
                 There are a ton of properties which you can find on the Mozilla Web Docs that can be used each
                 affecting the way an element is displayed. Properties are declared like so:
             </p>
-            <p>
-                <code>
-                    p {
-                    color: blue;
-                    font-size: 16px;
-                    }
-                </code>
-            </p>
-            <p>
-                This would produce the following result:
-            </p>
-            <img alt="Text saying 'I am blue!' that has been coloured blue by CSS."
-                 src="images/journal/week45/property-css.png">
+            <div class="group-container">
+                <div class="group-item">
+                    <p>
+                        <code>
+                            p {
+                            color: blue;
+                            font-size: 16px;
+                            }
+                        </code>
+                    </p>
+                </div>
+                <div class="group-item">
+                    <p>
+                        This would produce the following result:
+                    </p>
+                    <img alt="Text saying 'I am blue!' that has been coloured blue by CSS."
+                         src="images/journal/week45/property-css.png"
+                         class="float-item">
+                </div>
+            </div>
             <p>
                 However, we can also override styles or cascade them. If we were to declare these styles in the same
                 file:
             </p>
-            <p>
-                <code>
-                    p {
-                    color: blue;
-                    font-size: 16px;
-                    }
-                </code>
-            </p>
-            <p>
-                <code>
-                    p {
-                    color: red;
-                    font-size: 2.5em;
-                    }
-                </code>
-            </p>
-            <p>
-                That would produce the following result:
-            </p>
-            <img alt="Text saying 'I am now red!' that has been coloured red by CSS."
-                 src="images/journal/week45/cascade-css.png">
+            <div class="group-container">
+                <div class="group-item">
+                    <p>
+                        <code>
+                            p {
+                            color: blue;
+                            font-size: 16px;
+                            }
+                        </code>
+                    </p>
+                    <p>
+                        <code>
+                            p {
+                            color: red;
+                            font-size: 2.5em;
+                            }
+                        </code>
+                    </p>
+                </div>
+                <div class="group-item">
+                    <p>
+                        That would produce the following result:
+                    </p>
+                    <img alt="Text saying 'I am now red!' that has been coloured red by CSS."
+                         src="images/journal/week45/cascade-css.png"
+                         class="float-item">
+                </div>
+            </div>
             <p>
                 The second group of properties that we used for &lt;p&gt; override those of the first since they
                 conflict. This is useful for accessibility as it means we can provide default styling that can be
@@ -613,12 +641,6 @@
                 less code, and we only need to update the variables instead of cascading every element that needs
                 changed.
             </p>
-            <p>
-                I have also designed a mobile version of the website:
-            </p>
-            <img
-                    alt="A screenshot of a design wireframe for the learning journal that uses lots of rich media, optimised for a mobile display."
-                    src="images/journal/week45/figma-design-index-mobile.png">
             <h3>Progress Snapshot</h3>
             <p>
                 These weeks I added the basic styling for the website as well as changed how the navigation menu
@@ -627,6 +649,7 @@
                 shown previously. I have also replaced instances of code in the journal with the &lt;code&gt; element
                 so that they are displayed better.
             </p>
+            <!--TODO: Fix issue with empty space-->
             <img alt="A screenshot of the Learning Journal, now styled."
                  src="images/journal/week45/index.png">
         </article>
@@ -681,6 +704,77 @@
                 </p>
                 <img src="images/journal/week6/index.png"
                      alt="A screenshot of the Learning Journal, now optimised for desktop.">
+            </article>
+            <article>
+                <header>
+                    <a id="entry-week7">
+                        <h2>Week 7</h2>
+                        <h3>Flexible Media</h3>
+                    </a>
+                    <p>Published:
+                        <time datetime="2023-11-23">November 23, 2023</time>
+                    </p>
+                </header>
+                <p>
+                    This week we learnt about making images and videos more flexible and presenting them in different
+                    ways, including beside text by making them float. We also learnt a little bit about optimising
+                    media for the web and how to use CSS to replace certain types of backgrounds. We also learnt
+                    about making website favicons.
+                </p>
+                <h3>Flexible Images</h3>
+                <p>
+                    To start, HTML and CSS have many different ways of manipulating images. To start with there is
+                    the <code>background-image</code> CSS property. This allows the background of an element to be set
+                    to an image. This image is excluded from assistive technologies and also is not rendered in views
+                    like reader mode which makes it excellent for styling content, but it takes up additional space
+                    and bandwidth which is not ideal for some scenarios. CSS backgrounds later on can fix this.
+                </p>
+                <p>
+                    Additionally, it is possible to clip an image. When a size is applied to an image using the HTML
+                    width and height attributes, we can store the image inside a &lt;div&gt; with a CSS class that
+                    has the property <code>overflow: hidden</code>. This causes the browser rendering the content to
+                    clip the div so that only the parts of the image that can fit inside the &lt;div&gt; are shown.
+                </p>
+                <h3>Floating Elements</h3>
+                <p>
+                    On top of making the size of images flexible we can also make them float. Floating content means
+                    that other content can wrap around it. This is useful for images as it means that we can display
+                    relevant text beside images, and they do not take up the entire width of their parent.
+                </p>
+                <p>
+                    Content can be floated using the CSS <code>float</code> property, that takes a direction that
+                    determines how floated content should be aligned. This must annoyingly be explicitly cleared so
+                    that the rest of the content body can return to its natural flow. To clear it, the CSS
+                    <code>clear</code> property must be specified. It is easiest to use <code>clear: both</code>
+                    but it is also possible to clear a specific direction.
+                </p>
+                <h3>Optimising Content</h3>
+                <!--TODO: Do Optimising Content text-->
+                <h3>CSS Backgrounds</h3>
+                <!--TODO: Reference the web page you followed that has the extra fancy CSS3 backgrounds-->
+                <p>
+                    Earlier I discussed the <code>background-image</code> CSS property. I said that whilst this is a
+                    great property, in a number of scenarios it is unnecessary to use an image. This is because
+                    backgrounds can be made in realtime using CSS which is much more efficient and uses less
+                    bandwidth, and it still has all the benefits of <code>background-image</code>.
+                </p>
+                <!--TODO: Finish CSS Backgrounds-->
+                <h3>Website Favicons</h3>
+                <!--TODO: Do Website Favicons text-->
+                <h3>Progress Snapshot</h3>
+                <!--TODO: Do Progress Snapshot-->
+            </article>
+            <article>
+                <header>
+                    <a id="entry-week8">
+                        <h2>Week 8</h2>
+                        <h3>Layouts + Positioning</h3>
+                    </a>
+                    <p>Published:
+                        <time datetime="2023-11-30">November 30, 2023</time>
+                    </p>
+                </header>
+                <h3>Progress Snapshot</h3>
             </article>
         </div>
     </main>
