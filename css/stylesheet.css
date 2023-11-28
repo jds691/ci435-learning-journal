@@ -105,7 +105,8 @@ figcaption {
     box-sizing: border-box; /*Includes padding and border when calculating width*/
     display: flex;
     flex-direction: column;
-    flex: 1 1 100%
+    flex: 1 1 100%;
+    align-items: center;
 }
 
 .top-nav {
@@ -276,7 +277,4 @@ figcaption {
 
 /*Tablet - Landscape+*/
 @media (min-width: 60em) {
-    .group-item {
-        flex: 1 1 calc(100% / 3); /*Allows up to 3 items in a single row but also allows elements to expand when there are less then 3: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Mastering_wrapping_of_flex_items#wrapping_and_flex-direction*/
-    }
 }
