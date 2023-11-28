@@ -52,6 +52,26 @@ article header h3 {
     margin: 0;
 }
 
+code {
+    border-radius: var(--border-radius);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+figure {
+    padding: 16px;
+    border-radius: var(--border-radius);
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.7);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figcaption {
+    font-size: 0.8em;
+    font-weight: 700;
+    font-style: italic;
+}
+
 /*Classes*/
 .top-nav {
     margin: 0;
