@@ -60,6 +60,10 @@ img {
     border-radius: calc(var(--border-radius) / 2);
 }
 
+dt {
+    font-weight: 700;
+}
+
 article header h2 {
     margin-bottom: 0;
 }
