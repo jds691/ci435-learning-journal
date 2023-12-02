@@ -27,7 +27,7 @@ Backgrounds - https://blog.logrocket.com/advanced-effects-with-css-background-bl
 /*Elements*/
 html {
     background-color: black;
-    scroll-behavior:smooth
+    scroll-behavior: smooth
 }
 
 body {
@@ -195,7 +195,7 @@ figcaption {
 
 .icon-button {
     background: var(--accent-colour);
-    border-radius: 100%;
+    border-radius: 500px;
     padding: 1rem;
     color: var(--alt-primary-colour);
 }
@@ -211,25 +211,6 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.circles-background {
-    background-blend-mode: multiply;
-    background-size: 100px 100px;
-    background: radial-gradient(
-            rgb(33, 179, 136) 40px,
-            transparent 0,
-            transparent 100%
-    ), radial-gradient(
-            rgb(28, 82, 138) 40px,
-            transparent 0,
-            transparent 100%
-    ), radial-gradient(
-            rgb(167, 8, 38) 40px,
-            transparent 0,
-            transparent 100%
-    );
-    background-position: 0 0, 33px 33px, -33px -33px;
 }
 
 /*Causes slowdown on Firefox :(*/
