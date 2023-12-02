@@ -1,4 +1,3 @@
-<!--TODO: Add floating text so the desktop layout is better-->
 <!--TODO: Add offset to same-page anchor scrolling so the desktop navbar doesn't cover it-->
 <!doctype html>
 <html lang="en">
@@ -6,6 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta content="dark" name="color-scheme">
+
+    <meta property="og:title" content="Learning Journal">
+    <meta property="og:description" content="See what I’ve learnt and how this website has progressed over all of these weeks!">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website" />
+
     <title>Learning Journal</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
@@ -15,7 +20,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 </head>
 
-<body class="circles-background">
+<body class="wave-background">
 <a id="top"></a>
     <header class="hero">
         <nav class="top-nav">
@@ -37,7 +42,7 @@
                 <li><a href="#entry-week45">Week 4 + 5: CSS (Finally...)</a></li>
                 <li><a href="#entry-week6">Week 6: Adding Responsive Design</a></li>
                 <li><a href="#entry-week7">Week 7: Flexible Media</a></li>
-                <li><a href="#entry-week8">Week 8: Layouts + Positioning</a></li>
+                <!--<li><a href="#entry-week8">Week 8: Layouts + Positioning</a></li>-->
             </menu>
         </nav>
     </header>
@@ -59,10 +64,10 @@
                 <li><a href="#entry-week45">Week 4 + 5</a></li>
                 <li><a href="#entry-week6">Week 6</a></li>
                 <li><a href="#entry-week7">Week 7</a></li>
-                <li><a href="#entry-week8">Week 8</a></li>
+                <!--<li><a href="#entry-week8">Week 8</a></li>
                 <li><a href="#entry-week8">Week 9</a></li>
                 <li><a href="#entry-week8">Week 10</a></li>
-                <li><a href="#entry-week8">Week 11</a></li>
+                <li><a href="#entry-week8">Week 11</a></li>-->
             </menu>
         </nav>
 
@@ -136,7 +141,6 @@
                 something I will be using extensively during my projects development as I know it is important. Not
                 only for accessibility but also for CSS to function as expected.
             </p>
-            <!--Add a ref for Git, WebStorm, Remote Deployment-->
             <h3>Further Research</h3>
             <p>
                 In previous projects I sometimes made changes to them that caused major components to break without
@@ -173,17 +177,20 @@
             <div class="group-container">
                 <figure class="group-item">
                     <img alt="A screenshot of the appearance of the index page for week 1."
-                         src="images/journal/week1/index.png">
+                         src="images/journal/week1/index.png"
+                         loading="lazy">
                     <figcaption>Learning Journal</figcaption>
                 </figure>
                 <figure class="group-item">
                     <img alt="A screenshot of the appearance of the tutorial page for week 1."
-                         src="images/journal/week1/tutorial.png">
+                         src="images/journal/week1/tutorial.png"
+                         loading="lazy">
                     <figcaption>Tutorial</figcaption>
                 </figure>
                 <figure class="group-item">
                     <img alt="A screenshot of the appearance of the contact page for week 1."
-                         src="images/journal/week1/contact.png">
+                         src="images/journal/week1/contact.png"
+                         loading="lazy">
                     <figcaption>Contact Me</figcaption>
                 </figure>
             </div>
@@ -248,7 +255,8 @@
             </p>
             <figure>
                 <img alt="A screenshot of Apple store website, emphasising the use of the strong element."
-                     src="images/journal/week2/apple-strong.png">
+                     src="images/journal/week2/apple-strong.png"
+                     loading="lazy">
                 <figcaption>If you look in the inspector you can see that the word design is just a &lt;strong&gt;
                     element.
                 </figcaption>
@@ -271,7 +279,8 @@
             </p>
             <figure>
                 <img alt="A screenshot of the appearance of the index page for week 2."
-                     src="images/journal/week2/index.png">
+                     src="images/journal/week2/index.png"
+                     loading="lazy">
                 <figcaption>Added navigation menu and changed headings.</figcaption>
             </figure>
         </article>
@@ -332,7 +341,8 @@
             </p>
             <a href="https://www.brighton.ac.uk/index.aspx">
                 <img alt="Photo of a building at the University of Brighton."
-                     src="images/journal/week3/brighton-uni.jpg">
+                     src="images/journal/week3/brighton-uni.jpg"
+                     loading="lazy">
             </a>
             <p>
                 This way the links on a website don’t stick out like a sore thumb in that bright blue colour. We can
@@ -369,7 +379,8 @@
             </p>
             <figure>
                 <img alt="A screenshot of a design wireframe for the learning journal that resembles an article based website."
-                     src="images/journal/week3/figma-design-index-article.png">
+                     src="images/journal/week3/figma-design-index-article.png"
+                     loading="lazy">
                 <figcaption>A screenshot of a design wireframe for the learning journal that resembles an article based
                     website.
                 </figcaption>
@@ -387,12 +398,14 @@
             <div class="group-container">
                 <figure class="group-item">
                     <img alt="A screenshot of a design wireframe for the learning journal that uses lots of rich media."
-                         src="images/journal/week3/figma-design-index-media-0.jpg">
+                         src="images/journal/week3/figma-design-index-media-0.jpg"
+                         loading="lazy">
                     <figcaption>Hero banner.</figcaption>
                 </figure>
                 <figure class="group-item">
                     <img alt="A screenshot of the same design wireframe shown last but scrolled down to make article content visible."
-                         src="images/journal/week3/figma-design-index-media-1.jpg">
+                         src="images/journal/week3/figma-design-index-media-1.jpg"
+                         loading="lazy">
                     <figcaption>Article content.</figcaption>
                 </figure>
             </div>
@@ -408,12 +421,14 @@
             <div class="group-container">
                 <figure class="group-item">
                     <img alt="A screenshot of the appearance of the index page on mobile for week 3 without the viewport meta element."
-                         src="images/journal/week3/index-no-viewport.jpeg">
+                         src="images/journal/week3/index-no-viewport.jpeg"
+                         loading="lazy">
                     <figcaption>Without viewport.</figcaption>
                 </figure>
                 <figure class="group-item">
                     <img alt="A screenshot of the appearance of the index page on mobile for week 3 with the viewport meta element."
-                         src="images/journal/week3/index-viewport.jpeg">
+                         src="images/journal/week3/index-viewport.jpeg"
+                         loading="lazy">
                     <figcaption>With viewport.</figcaption>
                 </figure>
             </div>
@@ -488,7 +503,8 @@
                     </p>
                     <img alt="Text saying 'I am blue!' that has been coloured blue by CSS."
                          src="images/journal/week45/property-css.png"
-                         class="float-item">
+                         class="float-item"
+                         loading="lazy">
                 </div>
             </div>
             <p>
@@ -520,7 +536,8 @@
                     </p>
                     <img alt="Text saying 'I am now red!' that has been coloured red by CSS."
                          src="images/journal/week45/cascade-css.png"
-                         class="float-item">
+                         class="float-item"
+                         loading="lazy">
                 </div>
             </div>
             <p>
@@ -652,7 +669,8 @@
                 </p>
                 <div class="group-item">
                     <img alt="A screenshot of the Learning Journal, now styled."
-                         src="images/journal/week45/index.png">
+                         src="images/journal/week45/index.png"
+                         loading="lazy">
                 </div>
 
             </div>
@@ -708,7 +726,8 @@
                     To end off, the site has now been adjusted to run well on the desktop like previously designed.
                 </p>
                 <img src="images/journal/week6/index.png"
-                     alt="A screenshot of the Learning Journal, now optimised for desktop.">
+                     alt="A screenshot of the Learning Journal, now optimised for desktop."
+                     loading="lazy">
             </article>
             <article>
                 <header>
@@ -754,20 +773,162 @@
                     but it is also possible to clear a specific direction.
                 </p>
                 <h3>Optimising Content</h3>
-                <!--TODO: Do Optimising Content text-->
+                <p>
+                    With all of these images it is important to consider how all of this content reaches the users
+                    browser. Everytime your browser has to load this web page, it also has to load every single image
+                    and asset on it as well.
+                </p>
+                <p>
+                    Some people are in regions where their internet is incredibly slow when compared to other areas.
+                    Some sites do not accommodate these regions and therefore people in those regions are unable to
+                    use the website. This is especially true for websites that are rich in media like YouTube or
+                    websites that use real-time data for communication.
+                </p>
+                <p>
+                    To fix this, websites need to optimise their content for the web. There are 2 mains ways to do this:
+                </p>
+                <ol>
+                    <li>Reducing asset size</li>
+                    <li>Using lazy loading</li>
+                </ol>
+                <p>
+                    Reducing asset size means that a PC doesn't need to fetch as much information from the internet.
+                    This can be done by reducing image resolution or quality. This can also be achieved by stripping
+                    out unnecessary data such as depth or transparency information, which would normally be captured
+                    by software and cameras.
+                </p>
+                <p>
+                    The majority of my previous images were not optimised in this way as I did not think of people
+                    with poor internet initially. I only experience the issue of slow internet when attempting to
+                    access the site on a train which, as you could imagine, has pretty bad internet. My images and
+                    resources are now optimised for the web.
+                </p>
+                <p>
+                    There are also "next-gen" image formats that can be used on some devices and browsers that allow
+                    for very fast loading and high compression whilst keeping images looking nice. The two main ones
+                    are <a href="https://web.dev/learn/images/avif">AVIF</a> and <a
+                        href="https://web.dev/learn/images/webp">WebP</a>. Whilst these formats are great, browsers
+                    are only starting to support them now meaning that people using older, out-of-date devices, are
+                    unable to see this content. Because of that reason I have opted to not use these new formats.
+                </p>
+                <p>
+                    Lazy loading is the process of delaying when a browser loads something until it is needed. For
+                    example, this <a href="https://mathiasbynens.be/demo/img-loading-lazy">demo site from Web.Dev</a>
+                    has a list of cat images that is shows. This list of images is lazily loaded so that each cat
+                    image is loaded on demand when your browser needs to present it.
+                </p>
+                <p>
+                    This leads to significant performance improvements and also uses less bandwidth allowing people on
+                    poorer connections to load websites quickly. Where possible, I have implemented lazy loading.
+                </p>
                 <h3>CSS Backgrounds</h3>
-                <!--TODO: Reference the web page you followed that has the extra fancy CSS3 backgrounds-->
                 <p>
                     Earlier I discussed the <code>background-image</code> CSS property. I said that whilst this is a
                     great property, in a number of scenarios it is unnecessary to use an image. This is because
                     backgrounds can be made in realtime using CSS which is much more efficient and uses less
                     bandwidth, and it still has all the benefits of <code>background-image</code>.
                 </p>
-                <!--TODO: Finish CSS Backgrounds-->
+                <p>
+                    A great resource I used was a great web blog about advanced <a
+                        href="https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a/">CSS effects</a>. This blog
+                    described how to achieve various effects in CSS. It also contained a number of free-to-use pre-made
+                    backgrounds, I have chosen to use them for each web page and they look excellent.
+                </p>
                 <h3>Website Favicons</h3>
-                <!--TODO: Do Website Favicons text-->
+                <p>
+                    Did you know that the little icon beside the title of a tab on your browser is called a favicon?
+                    According to <a href="https://en.wikipedia.org/wiki/Favicon">Wikipedia</a>, the name is derived
+                    from favourite icon. The reason for that is because favicons were introduced in an early version
+                    of Internet Explorer as a way for users to quickly and visually identify that they had added to
+                    their favourites bar.
+                </p>
+                <p>
+                    Now, the favicon has many roles which you can read on this great <a
+                        href="https://uxplanet.org/web-usability-what-is-favicon-and-how-it-improves-your-website-c94d9be71a59">article on Medium</a>.
+                    To make a favicon, the file needs to be either an ICO, PNG, JPG or GIF. Once it has been created,
+                    it can be linked to a website using:
+                </p>
+                <p>
+                    <code>&lt;link rel="icon" type="image/ico" href="foldername/filename.ico"&gt;</code>
+                </p>
+                <h3>Further Research</h3>
+                <p>
+                    While a favicon can be displayed in the tab bar a website has more opportunities and place it can
+                    display icons and other branding. The main way to do this is social media previews.
+                </p>
+                <p>
+                    Social media previews are when a social media website like X, Facebook or any other site
+                    generating a preview take content from your website to present them nicely and in theme for their
+                    website. Take the following examples based on the famous <a
+                        href="https://www.youtube.com/watch?v=2yJgwwDcgV8&pp=ygUITnlhbiBDYXQ%3D">Nyan Cat video</a>.
+                </p>
+                <div class="group-container">
+                    <figure class="group-item">
+                        <img alt="A preview of how the video is displayed on Facebook."
+                             src="images/journal/week7/facebook.png"
+                             loading="lazy">
+                        <figcaption>Facebook</figcaption>
+                    </figure>
+                    <figure class="group-item">
+                        <img alt="A preview of how the video is displayed on LinkedIn."
+                             src="images/journal/week7/linkedin.png"
+                             loading="lazy">
+                        <figcaption>LinkedIn</figcaption>
+                    </figure>
+                    <figure class="group-item">
+                        <img alt="A preview of how the video is displayed on X."
+                             src="images/journal/week7/x.png"
+                             loading="lazy">
+                        <figcaption>X</figcaption>
+                    </figure>
+                </div>
+                <!--https://socialsharepreview.com/-->
+                <p>
+                    The main way to affect how these are generated is by implementing the <a
+                        href="https://ogp.me">Open Graph Protocol</a>. This protocol allows websites to display
+                    information in other websites in a way that looks visually appealing. The protocol has 3 main
+                    properties that are used:
+                </p>
+                <dl>
+                    <dt>og:title</dt>
+                    <dd>
+                        The title is shown in place of your websites title. This can be different from the websites
+                    title and even be localised.
+                    </dd>
+                    <dt>og:description</dt>
+                    <dd>
+                        The description gives a brief overview of your website and is displayed just below the title.
+                    </dd>
+                    <dt>og:image</dt>
+                    <dd>
+                        The image should point to an image URL or a JavaScript function that can generate images.
+                        This is displayed prominently beside the rest of the site's information. It is recommended to
+                        be 1200px x 630px or in a 1.91:1 aspect ratio.
+                    </dd>
+                </dl>
+                <p>
+                    I have adopted title, description, locale and type and I aim to adopt image later on as well.
+                </p>
                 <h3>Progress Snapshot</h3>
-                <!--TODO: Do Progress Snapshot-->
+                <p>
+                    This week, I have adjusted the site’s background and much of the layout. Most notably the layout
+                    of images and the surrounding text. In future weeks, I am to refine these layouts further and
+                    give each page a distinct background.
+                </p>
+                <div class="group-container">
+                    <figure class="group-item">
+                        <img alt="A screenshot of the new background for the learning journal."
+                             src="images/journal/week7/background.png"
+                             loading="lazy">
+                        <figcaption>Background</figcaption>
+                    </figure>
+                    <figure class="group-item">
+                        <img alt="A screenshot of the appearance of grouped elements."
+                             src="images/journal/week7/layout.jpg"
+                             loading="lazy">
+                        <figcaption>New layout</figcaption>
+                    </figure>
+                </div>
             </article>
             <article>
                 <header>

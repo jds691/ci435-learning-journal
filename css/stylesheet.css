@@ -3,13 +3,13 @@ Backgrounds - https://blog.logrocket.com/advanced-effects-with-css-background-bl
 */
 
 /*TODO: <code> text overflows always*/
-/*TODO: Card flex layout breaks on Safari*/
 
 /*Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/*Variables*/
+/*Variables + Config*/
 :root {
+    color-scheme: dark only;
     /*Colour*/
     --accent-colour: rgb(120, 93, 226);
     --primary-colour: black;
@@ -39,6 +39,18 @@ body {
 main {
     padding: 16px;
     background: rgba(0, 0, 0, 0.7);
+}
+
+/*
+* These link colours are taken from Firefox.
+* They make links visible in browsers that do not respect the color-scheme meta element
+*/
+a:link {
+    color: rgb(120, 115, 254);
+}
+
+a:visited {
+    color: rgb(253, 150, 255);
 }
 
 img {
@@ -174,6 +186,7 @@ figcaption {
     justify-content: center;
     align-items: flex-start;
     padding: 16px;
+    text-shadow: black 0 4px 4px;
 }
 
 .icon-button {
@@ -197,24 +210,75 @@ figcaption {
 }
 
 .circles-background {
+    background-blend-mode: multiply;
+    background-size: 100px 100px;
     background: radial-gradient(
             rgb(33, 179, 136) 40px,
             transparent 0,
             transparent 100%
-    ),
-    radial-gradient(
+    ), radial-gradient(
             rgb(28, 82, 138) 40px,
             transparent 0,
             transparent 100%
-    ),
-    radial-gradient(
+    ), radial-gradient(
             rgb(167, 8, 38) 40px,
             transparent 0,
             transparent 100%
     );
-    background-blend-mode: multiply;
-    background-size: 100px 100px;
     background-position: 0 0, 33px 33px, -33px -33px;
+}
+
+/*Causes slowdown on Firefox :(*/
+.wave-background {
+    background:
+            radial-gradient(
+                    at bottom right,
+                    dodgerblue 0,
+                    dodgerblue 1em,
+                    lightskyblue 1em,
+                    lightskyblue 2em,
+                    deepskyblue 2em,
+                    deepskyblue 3em,
+                    gainsboro 3em,
+                    gainsboro 4em,
+                    lightsteelblue 4em,
+                    lightsteelblue 5em,
+                    deepskyblue 5em,
+                    deepskyblue 6em,
+                    lightskyblue 6em,
+                    lightskyblue 7em,
+                    transparent 7em,
+                    transparent 8em
+            ),
+            radial-gradient(
+                    at top left,
+                    transparent 0,
+                    transparent 1em,
+                    lightskyblue 1em,
+                    lightskyblue 2em,
+                    deepskyblue 2em,
+                    deepskyblue 3em,
+                    lightsteelblue 3em,
+                    lightsteelblue 4em,
+                    gainsboro 4em,
+                    gainsboro 5em,
+                    deepskyblue 5em,
+                    deepskyblue 6em,
+                    skyblue 6em,
+                    skyblue 7em,
+                    dodgerblue 7em,
+                    dodgerblue 8em,
+                    transparent 8em,
+                    transparent 20em
+            ),
+            radial-gradient(
+                    circle at center bottom,
+                    darkslateblue, darkslateblue
+            );
+
+    background-blend-mode: overlay;
+    background-size:
+            8em 8em, 8em 8em, cover;
 }
 
 .not-mobile {
@@ -225,10 +289,9 @@ figcaption {
     max-width: 100%;
 }
 
-/*UNCOMMENT AFTER CREATING WEEK 4+ 5 SCREENSHOTS*/
 /*Queries*/
 
-/*Tablet - Portait*/
+/*Tablet - Portrait*/
 @media (min-width: 40em) {
     .mobile {
         display: none;
