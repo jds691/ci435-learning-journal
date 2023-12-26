@@ -42,7 +42,7 @@
                 <li><a href="#entry-week45">Week 4 + 5: CSS (Finally...)</a></li>
                 <li><a href="#entry-week6">Week 6: Adding Responsive Design</a></li>
                 <li><a href="#entry-week7">Week 7: Flexible Media</a></li>
-                <!--<li><a href="#entry-week8">Week 8: Layouts + Positioning</a></li>-->
+                <li><a href="#entry-week8">Week 8: Layouts + Positioning</a></li>
             </menu>
         </nav>
     </header>
@@ -64,8 +64,8 @@
                 <li><a href="#entry-week45">Week 4 + 5</a></li>
                 <li><a href="#entry-week6">Week 6</a></li>
                 <li><a href="#entry-week7">Week 7</a></li>
-                <!--<li><a href="#entry-week8">Week 8</a></li>
-                <li><a href="#entry-week8">Week 9</a></li>
+                <li><a href="#entry-week8">Week 8</a></li>
+                <!--<li><a href="#entry-week8">Week 9</a></li>
                 <li><a href="#entry-week8">Week 10</a></li>
                 <li><a href="#entry-week8">Week 11</a></li>-->
             </menu>
@@ -940,7 +940,61 @@
                         <time datetime="2023-11-30">November 30, 2023</time>
                     </p>
                 </header>
+                <p>
+                    This week we learnt about some additional types of layouts including flexbox and multi-column
+                    layouts. We also learnt about different ways to position an element.
+                </p>
+                <h3>Flexbox</h3>
+                <p>
+                    Flexbox like it sounds, is a more flexible layout for HTML elements. Flexbox elements can arrange
+                    themselves and their child elements in various ways, allowing them to resize or shrink themselves so
+                    that they can fit in allocated space or expand to fill space.
+                </p>
+                <p>
+                    Flexbox is used by many websites as it makes it easier to develop responsive webpages. The browser itself is now responsible for handling the responsiveness of the webpage, not the CSS or the developer.
+                </p>
+                <p>
+                    Flexbox can be configured by a variety of flex properties. The main one just being flex. Flex is just a shorthand property for flex-grow, flex-shrink and flex-basis. The three properties are determined by how many values there are in the flex property. So let me explain each property.
+                </p>
+                <p>
+                    Flex-grow determines how each flex item in a container grows when there is extra space unoccupied by elements. This value is relative, meaning that the browser calculates how to allocate space based on this value. So if a flex item has a value of 1, and another has a value of 2. The one with the value of 2 will grow twice as much as the other flex item.
+                </p>
+                <p>
+                    Flex-shrink has the opposite effect. It determines how much an element should shrink by if the parent container is smaller than the size of the flex items combined. It is also a relative value.
+                </p>
+                <p>
+                    Flex-basis determines the initial main size of the flex item. The default value is auto meaning that the flex item will only take up it’s original space. But it is also possible to set measurements. For example, setting a value of 200px means that the flex item will take up 200px of space but shrink as needed to fill the available space.
+                </p>
+                <h3>Multi-Column</h3>
+                <p>
+                    Multi-column is an easy way to layout content neatly in columns and its easy to modify using CSS media queries. In CSS all you need to set is column-count to have the child elements of an element be laid out in multiple columns. For larger screens, this can be set to 2 columns and on mobile, just 1 so it displays as normal. This is excellent for web pages with a lot of text like a research report or journal entry.
+                </p>
+                <p>
+                    It is also possible to set an element to span specific columns or all of them. For example, you wouldn't want the header of an article to only display on one column. So, you could set column-span to all. This would tell the browser that this element should take up the width of all columns in its parent.
+                </p>
+                <h3>Positioning</h3>
+                <p>
+                    We also learnt about various ways of achieved specific positioning. The two most common ones are fixed and sticky.
+                </p>
+                <p>
+                    Fixed positioning tells the browser that regardless of where an element lives in the DOM, display it at the set specific position. I found that this worked best for persistently floating elements on a page, especially for mobile. Therefore, I chose to use this for the “Go to top” button in the bottom right of my website on mobile. This was done by settings the position to be fixed and specifying the bottom and right properties. These properties (as well as top and left) are used to affect element positions. In fixed positioning, it tells the browser how to position an element relative to an edge. So for my button I set the following:
+                </p>
+                <p>
+                    <code>
+                        bottom: 16px;
+                        right: 16px;
+                    </code>
+                </p>
+                <p>
+                    This tells the browser to position the button at the bottom right of the webpage always, but padded in by 16px. The value of 16px is fixed as the <a href="https://developer.apple.com/design/human-interface-guidelines/layout">Apple Human Interface Guidelines for layout</a> specify that the margin for a scrolling body should be 16px on the left and right edges. I carried this forward to the bottom as well so that the button didn't make contact with the browser and system UI.
+                </p>
+                <p>
+                    Sticky positioning tells the browser to keep an element in its original position, but when the element would normally go off-screen it should be offset by a certain amount. I used this in my desktop layout for the top navigation bar. It sits in place normally but when it is about to go off-screen it is stuck to the top of the screen but offset by 16px this is controlled by the top property it is set to 16px again for the same reason.
+                </p>
                 <h3>Progress Snapshot</h3>
+                <p>
+                    To end off, there are no notable changes for this week.
+                </p>
             </article>
         </div>
     </main>
