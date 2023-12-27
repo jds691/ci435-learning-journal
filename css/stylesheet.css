@@ -34,6 +34,7 @@ body {
     font-family: var(--default-font-family);
     font-size: var(--base-font-size);
     color: var(--alt-primary-colour);
+    accent-color: var(--accent-colour);
 }
 
 main {
@@ -99,7 +100,47 @@ figcaption {
     font-style: italic;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    /*width and height are a bit of a hack to size and align things correctly*/
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+label, input[type=submit] {
+    margin-top: 1em;
+}
+
+input[type=submit] {
+    background: var(--accent-colour);
+    border: 0;
+    border-radius: var(--border-radius);
+    padding: 16px;
+}
+
+input[type=text], input[type=email], textarea {
+    background: rgba(0, 0, 0, 0.50);
+    border: 1px solid #FFF;
+    border-radius: var(--border-radius);
+    padding: 16px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: 0;
+}
+
+textarea {
+    resize: none;
+    min-height: 4em; /*4 lines of content*/
+}
+
 /*Classes*/
+.contact-column-split {
+    column-count: 1;
+}
+
 .float-right .float-item {
     float: right;
 }
@@ -123,6 +164,10 @@ figcaption {
     flex-direction: column;
     flex: 1 1 100%;
     align-items: center;
+}
+
+.contact-group {
+    display: block;
 }
 
 .top-nav {
@@ -270,6 +315,10 @@ figcaption {
     display: none;
 }
 
+.contact-hero {
+    height: 60vh;
+}
+
 #wrapper {
     max-width: 100%;
 }
@@ -277,7 +326,7 @@ figcaption {
 /*Queries*/
 
 /*Tablet - Portrait*/
-@media (min-width: 40em) {
+@media (min-width: 600px) {
     .mobile {
         display: none;
     }
@@ -324,5 +373,12 @@ figcaption {
 }
 
 /*Tablet - Landscape+*/
-@media (min-width: 60em) {
+@media (min-width: 992px) {
+    .contact-hero {
+        height: 100vh;
+    }
+
+    .contact-group {
+        display: flex;
+    }
 }

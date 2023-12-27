@@ -17,9 +17,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 </head>
 
-<body class="wave-background">
+<body class="wave-background group-container contact-group">
 <a id="top"></a>
-  <header class="hero">
+  <header class="hero group-item contact-hero">
     <nav class="top-nav">
       <menu>
         <li><a href="index.html">Learning Journal</a></li>
@@ -27,12 +27,12 @@
         <li><a href="contact.html">Contact me</a></li>
       </menu>
     </nav>
+    <!--TODO: Add waving GIF-->
     <h1>Contact Me</h1>
     <p>
       Hello nice to meet you! Send me a message, and I’ll be sure to get back to you.
     </p>
   </header>
-
 <!--<div class="not-mobile">
   <h2>Timetable</h2>
   <table>
@@ -118,23 +118,16 @@
     </tr>
   </table>
 </div>-->
-  <main>
-    <div id="wrapper">
-    <h2>Weekly Posts</h2>
-
-    <article>
-      <header>
-        <h3>Week 1: ...</h3>
-      </header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat, risus et hendrerit consequat,
-        ante lectus
-        porttitor tellus, eget blandit urna nibh a metus. </p>
-
-      <p>Some reference here to my own reading and research, explaining what I have done and what I have learned
-        from it.</p>
-
-    </article>
-    </div>
+  <main class="group-item">
+    <form>
+      <label for="name">Full Name</label><br>
+      <input type="text" id="name" name="name" placeholder="John Doe"><br>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="jdoe@example.com"><br>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message"></textarea><br>
+      <input type="submit" value="Send">
+    </form>
   </main>
 </body>
 </html>

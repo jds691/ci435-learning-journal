@@ -43,6 +43,7 @@
                 <li><a href="#entry-week6">Week 6: Adding Responsive Design</a></li>
                 <li><a href="#entry-week7">Week 7: Flexible Media</a></li>
                 <li><a href="#entry-week8">Week 8: Layouts + Positioning</a></li>
+                <li><a href="#entry-week9">Week 9: Forms</a></li>
             </menu>
         </nav>
     </header>
@@ -65,9 +66,7 @@
                 <li><a href="#entry-week6">Week 6</a></li>
                 <li><a href="#entry-week7">Week 7</a></li>
                 <li><a href="#entry-week8">Week 8</a></li>
-                <!--<li><a href="#entry-week8">Week 9</a></li>
-                <li><a href="#entry-week8">Week 10</a></li>
-                <li><a href="#entry-week8">Week 11</a></li>-->
+                <li><a href="#entry-week9">Week 9</a></li>
             </menu>
         </nav>
 
@@ -995,6 +994,86 @@
                 <p>
                     To end off, there are no notable changes for this week.
                 </p>
+            </article>
+            <article>
+                <header>
+                    <a id="entry-week9">
+                        <h2>Week 9</h2>
+                        <h3>Forms</h3>
+                    </a>
+                    <p>Published:
+                        <time datetime="2023-12-07">December 7, 2023</time>
+                    </p>
+                </header>
+                <p>
+                    This week we learnt about HTML and CSS forms, how they work and the various elements that can be added to a form.
+                </p>
+                <h3>Forms</h3>
+                <p>
+                    Everybody has seen a website form in some way or another. Forms are used for entering things like contact details, card information, messages or reviews. But all of them contain different elements and styles.
+                </p>
+                <p>
+                    Forms are declared in HTML using the &lt;form&gt; attribute. This element contains a variety of input elements, I am going to highlight a couple of them.
+                </p>
+                <p>
+                    The "text" type creates a single-line text field which the user can type into. By default, it has nothing in it but this can be changed using the placeholder attribute. It takes a string and allows for text to be shown when the text field is empty. There are also special types of "text" like "email" and "password" which take on special behaviours such as validation and character hiding.
+                </p>
+                <p>
+                    The "button" type creates a clickable button, the configure its behaviour JavaScript can be added to the onclick attribute which will be run each time the button is clicked. Additionally, the text of the button can be changed by setting its value attribute.
+                </p>
+                <p>
+                    There is a special variant of "button" called "submit" that automatically performs the action as declared on the form element. I will talk more about this action attribute later.
+                </p>
+                <p>
+                    There are also some other elements that are useful in forms:
+                </p>
+                <dl>
+                    <dt>&lt;label&gt;</dt>
+                    <dd>Creates a label for a given input element, identified by the input elements id.</dd>
+                    <dt>&lt;textarea&gt;</dt>
+                    <dd>Creates a multiline text field that can be resized.</dd>
+                    <dt>&lt;legend&gt;</dt>
+                    <dd>Groups a number of input elements together.</dd>
+                    <dt>&lt;fieldset&gt;</dt>
+                    <dd>Shows a label for a &lt;fieldset&gt; element.</dd>
+                </dl>
+                <h3>Further Research</h3>
+                <p>
+                    Like I talked about before, form elements have an action attribute. This attribute takes a URL that is called which is expected to handle the data of the form. How this action is used depends on the method attribute of the form. This method can be GET or POST and perform slightly different actions.
+                </p>
+                <p>
+                    GET functions similarly to an SQL query. The URL of the action attribute is called, and the form data is appended to the end of it using URL query parameters. Each input is added to the URL using its “id” attribute and its stored value. For example, a username of test may be fetched from a URL like so:
+                </p>
+                <p>
+                    <code>
+                        https://example.com?username=test
+                    </code>
+                </p>
+                <p>
+                    The action URL is then expected to return the relevant data, in this case that could be the information of the user who has that username.
+                </p>
+                <p>
+                    POST is used to send data to the action URL which is expected to do some processing with that data and then return the result of that processing. Instead of adding URL query parameters to the action URL, an HTTP network request is sent to the action URL and the request body of that request contains the URL query parameters. If we use the same example as before, the following network request would be sent:
+                </p>
+                <p>
+                    <code>
+                        POST / HTTP/2.0<br>
+                        Host: example.com<br>
+                        Content-Type: application/x-www-form-urlencoded<br>
+                        Content-Length: 13<br><br>
+
+                        username=test
+                    </code>
+                </p>
+                <p>
+                    A response would then be expected with some relevant data.
+                </p>
+                <h3>Progress Snapshot</h3>
+                <p>
+                    To end off, the Contact Me section of the website has now been fully implemented.
+                </p>
+                <img src="images/journal/week9/contact.jpg"
+                    alt="Screenshot of the finished Contact Me page.">
             </article>
         </div>
     </main>
