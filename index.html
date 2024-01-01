@@ -44,6 +44,7 @@
                 <li><a href="#entry-week7">Week 7: Flexible Media</a></li>
                 <li><a href="#entry-week8">Week 8: Layouts + Positioning</a></li>
                 <li><a href="#entry-week9">Week 9: Forms</a></li>
+                <li><a href="#entry-week11">Week 11: Testing and Evaluation</a></li>
             </menu>
         </nav>
     </header>
@@ -67,6 +68,7 @@
                 <li><a href="#entry-week7">Week 7</a></li>
                 <li><a href="#entry-week8">Week 8</a></li>
                 <li><a href="#entry-week9">Week 9</a></li>
+                <li><a href="#entry-week11">Week 11</a></li>
             </menu>
         </nav>
 
@@ -1075,6 +1077,84 @@
                 <img src="images/journal/week9/contact.jpg"
                     alt="Screenshot of the finished Contact Me page."
                     loading="lazy">
+            </article>
+            <article>
+                <header>
+                    <a id="entry-week11">
+                        <h2>Week 1</h2>
+                        <h3>Testing and Evaluation</h3>
+                    </a>
+                    <p>Published:
+                        <time datetime="2023-12-21">December 21, 2023</time>
+                    </p>
+                </header>
+                <p>
+                    (There is no Week 10 entry as it did not involve any journal related content)
+                </p>
+                <p>
+                    This week we learnt about how to properly test and evaluate the various parts of the website to make sure they are efficient and meet the assignment criteria.
+                </p>
+                <h3>Testing</h3>
+                <p>
+                    Testing a website is very important. It ensures that the website looks correctly across a variety of web browsers and screen sizes. The important parts of testing are checking for W3C compliance, ensuring the website is fully functional and responsive, and ensuring that the site is accessible.
+                </p>
+                <p>
+                    W3C compliance has already been ensured by using the W3C markup validation service. My website has already been tested with this service.
+                </p>
+                <p>
+                    For ensuring that the website is fully functional I have tested it using:
+                </p>
+                <ul>
+                    <li>Google Chrome (Chromium)</li>
+                    <li>Firefox (Gecko)</li>
+                    <li>Safari (WebKit)</li>
+                </ul>
+                <p>
+                    I chose these browsers as they all function using different browsing engines meaning that they are all likely to behave differently from each other.
+                </p>
+                <p>
+                    From testing all of the different engines I’ve noted a couple of key differences:
+                </p>
+                <ul>
+                    <li>
+                        Safari deviates the most from standard HTML behaviour. It does not respect a number of HTML5 and CSS properties, opting to use vendor specific properties and behaviours. Additionally, Safari replaces HTML input elements with system controls which significantly limits the ability to style them which has caused issues with the Contact form.
+                    </li>
+                    <li>
+                        The Gecko engine performs the slowest out of all the browsing engines, at times struggling to render the CSS3 backgrounds of the website.
+                    </li>
+                </ul>
+                <h3>Evaluation</h3>
+                <p>
+                    One key tool for evaluation is Google Lighthouse. Google Lighthouse is built into a variety of Chromium browsers. It runs a set of audits for a given URL and checks: Performance, Accessibility, Best Practices, SEO and PWA.
+                </p>
+                <p>
+                    Performance evaluates how quickly and efficiently the webpage loads and it highlights opportunities to improve the speed of loading.
+                </p>
+                <p>
+                    Accessibility checks that a wide variety of users can access content in a way that’s suitable for them as well as checking that they can navigate the website effectively.
+                </p>
+                <p>
+                    Best Practices checks that the contents of the website meet a variety of best practices that can be found on the <a href="https://developer.chrome.com/docs/lighthouse/best-practices/doctype">Chrome for Developers site for the Lighthouse Best Practices</a> audit.
+                </p>
+                <p>
+                    SEO or Search Engine Optimisation checks that your website is optimised for search engines so that it can be accurately ranked as high as possible among the various other search results. SEO is irrelevant for my project as it is not designed to be found.
+                </p>
+                <p>
+                    PWA or Progressive Web App checks that the website is installable to a user’s home screen on iOS and Android and that the website is fast enough and reliable. Again, I am not targeting PWA and so this score is irrelevant.
+                </p>
+                <p>
+                    My Learning Journal scores very well when auditing the desktop site with Lighthouse:
+                </p>
+                <img src="images/journal/week11/lighthouse-audit.jpg"
+                     alt="Screenshot of the audit scores for the website. Performance: 100/100, Accessibility: 93/100, Best Practices: 100/100"
+                     loading="lazy">
+                <p>
+                    The only dip here is in Accessibility. This is because I have an anchor on the page with no text that enables the go-to top button on the website. This is something I have tried to resolve however Lighthouse will not mark the issue as resolved.
+                </p>
+                <h3>Progress Snapshot</h3>
+                <p>
+                    There is no notable progress to report this week.
+                </p>
             </article>
         </div>
     </main>
