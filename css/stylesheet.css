@@ -366,7 +366,8 @@ textarea {
     }
 
     .group-item {
-        flex: 1 1 calc(100% / 2); /*Allows up to 3 items in a single row but also allows elements to expand when there are less then 3: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Mastering_wrapping_of_flex_items#wrapping_and_flex-direction*/
+        flex: 1 1 calc(calc(100% / 2) - 16px); /*Allows up to 2 items in a single row but also allows elements to expand when there are less then 3: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Mastering_wrapping_of_flex_items#wrapping_and_flex-direction*/
+        margin: 8px;
     }
 
     #wrapper {
