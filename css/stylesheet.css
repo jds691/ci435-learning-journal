@@ -136,6 +136,13 @@ textarea {
     min-height: 4em; /*4 lines of content*/
 }
 
+aside {
+    background: rgba(0, 0, 0, 0.50);
+    border: 1px solid #FFF;
+    border-radius: var(--border-radius);
+    padding: 16px;
+}
+
 /*Classes*/
 .contact-column-split {
     column-count: 1;
