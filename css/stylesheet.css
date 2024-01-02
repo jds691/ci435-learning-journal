@@ -370,6 +370,10 @@ textarea {
         margin: 8px;
     }
 
+    .contact-group-item {
+        margin: 0;
+    }
+
     #wrapper {
         align-content: center;
         max-width: 70%;
