@@ -339,6 +339,13 @@ textarea {
         display: inherit;
     }
 
+    a.nav {
+        display: block;
+        position: relative;
+        top: -122px; /*Size of entry nav(90px) + top offset(16px) + 16px padding below*/
+        visibility: hidden;
+    }
+
     .entry-nav a {
         text-align: center;
     }
