@@ -402,10 +402,6 @@ td {
             column-span: all;
         }
 
-        h3 {
-            break-before: column;
-        }
-
         p {
             break-inside: avoid;
         }
