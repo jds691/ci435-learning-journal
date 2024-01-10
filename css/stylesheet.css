@@ -54,17 +54,6 @@ a:visited {
     color: rgb(253, 150, 255);
 }
 
-img {
-    max-width: 100%;
-    max-height: 500px; /*Safe guard for extra large images*/
-    border: 1px solid #FFF;
-    border-radius: calc(var(--border-radius) / 2);
-}
-
-dt {
-    font-weight: 700;
-}
-
 article header h2 {
     margin-bottom: 0;
 }
@@ -75,9 +64,27 @@ article header h3 {
     margin: 0;
 }
 
+aside {
+    background: rgba(0, 0, 0, 0.50);
+    border: 1px solid #FFF;
+    border-radius: var(--border-radius);
+    padding: 16px;
+}
+
 code {
     border-radius: var(--border-radius);
     background: rgba(0, 0, 0, 0.7);
+}
+
+dt {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    max-height: 500px; /*Safe guard for extra large images*/
+    border: 1px solid #FFF;
+    border-radius: calc(var(--border-radius) / 2);
 }
 
 figure {
@@ -109,10 +116,6 @@ form {
     justify-content: center;
 }
 
-label, input[type=submit] {
-    margin-top: 1em;
-}
-
 input[type=submit] {
     background: var(--accent-colour);
     border: 0;
@@ -131,33 +134,70 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     border: 0;
 }
 
+label, input[type=submit] {
+    margin-top: 1em;
+}
+
 textarea {
     resize: none;
     min-height: 4em; /*4 lines of content*/
 }
 
-aside {
-    background: rgba(0, 0, 0, 0.50);
-    border: 1px solid #FFF;
-    border-radius: var(--border-radius);
-    padding: 16px;
+/*Classes + ids*/
+.clear {
+    clear: both;
 }
 
-/*Classes*/
 .contact-column-split {
     column-count: 1;
 }
 
-.float-right .float-item {
-    float: right;
+.contact-group {
+    display: block;
+}
+
+.contact-hero {
+    height: 60vh;
+}
+
+.entry-nav {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    border-radius: var(--border-radius);
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.7);
+    align-self: stretch;
+}
+
+.entry-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.entry-nav a:hover {
+    color: var(--accent-colour);
+}
+
+.entry-nav menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .float-left .float-item {
     float: left;
 }
 
-.clear {
-    clear: both;
+.float-right .float-item {
+    float: right;
+}
+
+.floating-action-button {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    box-shadow: var(--default-drop-shadow);
 }
 
 .group-container {
@@ -173,8 +213,44 @@ aside {
     align-items: center;
 }
 
-.contact-group {
-    display: block;
+.hero {
+    display: flex;
+    height: 100vh;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    text-shadow: black 0 4px 4px;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon-button {
+    background: var(--accent-colour);
+    border-radius: 500px;
+    padding: 1rem;
+    color: var(--alt-primary-colour);
+}
+
+.icon-button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.multi-column-container {
+    columns: 1;
+}
+
+.not-mobile {
+    display: none;
 }
 
 .top-nav {
@@ -183,15 +259,6 @@ aside {
     left: 0;
     position: absolute;
     padding: 16px;
-}
-
-.top-nav menu {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    list-style-type: none;
 }
 
 .top-nav a {
@@ -204,73 +271,13 @@ aside {
     color: var(--accent-colour);
 }
 
-.hero h1 {
-    margin: 0;
-}
-
-.entry-nav {
-    display: flex;
-    padding: 16px;
-    align-items: flex-start;
-    border-radius: var(--border-radius);
-    border: 1px solid #FFF;
-    background: rgba(0, 0, 0, 0.7);
-    align-self: stretch;
-}
-
-.entry-nav menu {
+.top-nav menu {
     margin: 0;
     padding: 0;
-    list-style-type: none;
-}
-
-.entry-nav a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.entry-nav a:hover {
-    color: var(--accent-colour);
-}
-
-.hero {
     display: flex;
-    /*TODO: Crop at a certain height so it isn't ridiculous*/
-    height: 100vh;
-    gap: 0;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    padding: 16px;
-    text-shadow: black 0 4px 4px;
-}
-
-.icon-button {
-    background: var(--accent-colour);
-    border-radius: 500px;
-    padding: 1rem;
-    color: var(--alt-primary-colour);
-}
-
-.floating-action-button {
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    box-shadow: var(--default-drop-shadow);
-}
-
-.icon-button span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.multi-column-container {
-    columns: 1;
+    gap: 16px;
+    list-style-type: none;
 }
 
 /*Causes slowdown on Firefox :(*/
@@ -324,14 +331,6 @@ aside {
     background-size: 8em 8em, 8em 8em, cover;
 }
 
-.not-mobile {
-    display: none;
-}
-
-.contact-hero {
-    height: 60vh;
-}
-
 #wrapper {
     max-width: 100%;
 }
@@ -340,19 +339,25 @@ aside {
 
 /*Tablet - Portrait*/
 @media (min-width: 600px) {
-    .mobile {
-        display: none;
-    }
-
-    .not-mobile {
-        display: inherit;
-    }
-
     a.nav {
         display: block;
         position: relative;
         top: -122px; /*Size of entry nav(90px) + top offset(16px) + 16px padding below*/
         visibility: hidden;
+    }
+
+    .contact-group-item {
+        margin: 0;
+    }
+
+    .entry-nav {
+        position: sticky;
+        top: 16px;
+        border-radius: 500px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.3);
+        box-shadow: var(--default-drop-shadow);
     }
 
     .entry-nav a {
@@ -371,23 +376,13 @@ aside {
         gap: 1rem;
     }
 
-    .entry-nav {
-        position: sticky;
-        top: 16px;
-        border-radius: 500px;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        background: rgba(0, 0, 0, 0.3);
-        box-shadow: var(--default-drop-shadow);
-    }
-
     .group-item {
         flex: 1 1 calc(calc(100% / 2) - 16px); /*Allows up to 2 items in a single row but also allows elements to expand when there are less then 3: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Mastering_wrapping_of_flex_items#wrapping_and_flex-direction*/
         margin: 8px;
     }
 
-    .contact-group-item {
-        margin: 0;
+    .mobile {
+        display: none;
     }
 
     .multi-column-container {
@@ -406,6 +401,10 @@ aside {
         }
     }
 
+    .not-mobile {
+        display: inherit;
+    }
+
     #wrapper {
         align-content: center;
         max-width: 70%;
@@ -415,11 +414,11 @@ aside {
 
 /*Tablet - Landscape+*/
 @media (min-width: 992px) {
-    .contact-hero {
-        height: 100vh;
-    }
-
     .contact-group {
         display: flex;
+    }
+
+    .contact-hero {
+        height: 100vh;
     }
 }
