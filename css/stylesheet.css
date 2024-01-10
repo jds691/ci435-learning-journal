@@ -136,9 +136,21 @@ label, input[type=submit] {
     margin-top: 1em;
 }
 
+table {
+    font-size: 0.85rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: var(--border-radius);
+    border: 1px solid #FFF;
+}
+
 textarea {
     resize: none;
     min-height: 4em; /*4 lines of content*/
+}
+
+td {
+    border-top: 1px solid #FFF;
 }
 
 /*Classes + ids*/
@@ -152,6 +164,10 @@ textarea {
 
 .contact-group {
     display: block;
+}
+
+.contact-group-item {
+    margin: 0 !important; /*Forcefully override the margin on .group-item*/
 }
 
 .contact-hero {
@@ -342,10 +358,6 @@ textarea {
         position: relative;
         top: -122px; /*Size of entry nav(90px) + top offset(16px) + 16px padding below*/
         visibility: hidden;
-    }
-
-    .contact-group-item {
-        margin: 0;
     }
 
     .entry-nav {
