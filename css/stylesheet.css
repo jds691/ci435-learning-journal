@@ -294,7 +294,6 @@ td {
     list-style-type: none;
 }
 
-/*Causes slowdown on Firefox :(*/
 .wave-background {
     background: radial-gradient(
             at bottom right,
