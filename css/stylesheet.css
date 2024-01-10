@@ -269,6 +269,10 @@ aside {
     display: none;
 }
 
+.multi-column-container {
+    columns: 1;
+}
+
 /*Causes slowdown on Firefox :(*/
 .wave-background {
     background: radial-gradient(
@@ -384,6 +388,22 @@ aside {
 
     .contact-group-item {
         margin: 0;
+    }
+
+    .multi-column-container {
+        columns: 2;
+
+        h2 {
+            column-span: all;
+        }
+
+        h3 {
+            break-before: column;
+        }
+
+        p {
+            break-inside: avoid;
+        }
     }
 
     #wrapper {
