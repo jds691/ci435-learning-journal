@@ -358,6 +358,12 @@ td {
     max-width: 100%;
 }
 
+/*Source: https://yoast.com/how-to-make-youtube-videos-responsive/*/
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
 /*Queries*/
 
 /*Tablet - Portrait*/
