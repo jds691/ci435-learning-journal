@@ -277,12 +277,18 @@ td {
 
 .top-nav a {
     color: inherit;
+    text-align: center;
     text-decoration: none;
     text-shadow: black 0 4px 4px;
 }
 
 .top-nav a:hover {
     color: var(--accent-colour);
+}
+
+.top-nav li {
+    flex-basis: 100%;
+    text-align: center; /*https://www.andy-howard.com/verticalAndHorizontalAlignment/index.html#*/
 }
 
 .top-nav menu {
@@ -408,6 +414,10 @@ td {
 
     .not-mobile {
         display: inherit;
+    }
+
+    .top-nav li {
+        flex-basis: unset;
     }
 
     #wrapper {
