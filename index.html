@@ -40,7 +40,8 @@
             <li><a href="#entry-week1">Week 1: Getting Started</a></li>
             <li><a href="#entry-week2">Week 2: Richer Content</a></li>
             <li><a href="#entry-week3">Week 3: Richer Content + Metadata</a></li>
-            <li><a href="#entry-week45">Week 4 + 5: CSS (Finally...)</a></li>
+            <li><a href="#entry-week4">Week 4: CSS (Finally...)</a></li>
+            <li><a href="#entry-week5">Week 5: CSS Fonts</a></li>
             <li><a href="#entry-week6">Week 6: Adding Responsive Design</a></li>
             <li><a href="#entry-week7">Week 7: Flexible Media</a></li>
             <li><a href="#entry-week8">Week 8: Layouts + Positioning</a></li>
@@ -64,7 +65,8 @@
             <li><a href="#entry-week1">Week 1</a></li>
             <li><a href="#entry-week2">Week 2</a></li>
             <li><a href="#entry-week3">Week 3</a></li>
-            <li><a href="#entry-week45">Week 4 + 5</a></li>
+            <li><a href="#entry-week4">Week 4</a></li>
+            <li><a href="#entry-week5">Week 5</a></li>
             <li><a href="#entry-week6">Week 6</a></li>
             <li><a href="#entry-week7">Week 7</a></li>
             <li><a href="#entry-week8">Week 8</a></li>
@@ -467,21 +469,16 @@
         </article>
         <article>
             <header>
-                <a id="entry-week45" class="nav"></a>
-                <h2>Week 4 + 5</h2>
+                <a id="entry-week4" class="nav"></a>
+                <h2>Week 4</h2>
                 <h3>CSS (Finally...)</h3>
                 <p>Published:
-                    <time datetime="2023-11-09">November 9, 2023</time>
+                    <time datetime="2023-11-02">November 2, 2023</time>
                 </p>
             </header>
             <p>
-                (Due to how closely linked these weeks are and how small week 5 is on its own, I have combined week
-                4 and 5 into one entry.)
-            </p>
-            <p>
                 At long last. We have reached CSS. These weeks we learnt the basics of CSS, how they know to style
-                elements and how we link the files themselves to HTML. Additionally, we learnt about using fonts from
-                Google Fonts and how we can now style text using CSS.
+                elements and how we link the files themselves to HTML.
             </p>
             <h3>CSS File Format</h3>
             <p>
@@ -533,7 +530,7 @@
                         This would produce the following result:
                     </p>
                     <img alt="Text saying 'I am blue!' that has been coloured blue by CSS."
-                         src="images/journal/week45/property-css.png"
+                         src="images/journal/week4/property-css.png"
                          class="float-item"
                          loading="lazy">
                 </div>
@@ -566,7 +563,7 @@
                         That would produce the following result:
                     </p>
                     <img alt="Text saying 'I am now red!' that has been coloured red by CSS."
-                         src="images/journal/week45/cascade-css.png"
+                         src="images/journal/week4/cascade-css.png"
                          class="float-item"
                          loading="lazy">
                 </div>
@@ -578,7 +575,7 @@
             </p>
             <p>
                 Also notice how we declared that the font size is 2.5em. What is an em? The em is a relative
-                unit<sup><a href="#week45-references">[1]</a></sup> of measurement in CSS. This means that instead of
+                unit<sup><a href="#week4-references">[1]</a></sup> of measurement in CSS. This means that instead of
                 setting a fixed size for the font we can size the font relative to something else. With em, it means we
                 are calculating the font size based on the font size of the current element. So, let’s say the current
                 font size was 16px when we use 2.5em, we are asking for the font size to be set to 2.5 x 16 which would
@@ -600,10 +597,49 @@
                 another style sheet since the files also cascade each other. This is useful for normalizing the base
                 appearance of a website using something like normalize.css.
             </p>
+            <h3>Progress Snapshot</h3>
+            <div class="group-container">
+                <p class="group-item">
+                    These weeks I added the basic styling for the website as well as changed how the navigation menu
+                    looks. I have decided to adopt best practices and design the website to be mobile first. Meaning
+                    that
+                    the design for the website is made with a phone in mind and will be later adapted to the desktop as
+                    shown previously. I have also replaced instances of code in the journal with the &lt;code&gt;
+                    element
+                    so that they are displayed better.
+                </p>
+                <div class="group-item">
+                    <img alt="A screenshot of the Learning Journal, now styled."
+                         src="images/journal/week4/index.png"
+                         loading="lazy">
+                </div>
+
+            </div>
+            <aside>
+                <a id="week4-references" class="nav"></a>
+                <h3>References</h3>
+                <ol>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">CSS
+                        values and units - Learn web development | MDN</a></li>
+                </ol>
+            </aside>
+        </article>
+        <article>
+            <header>
+                <a id="entry-week5" class="nav"></a>
+                <h2>Week 5</h2>
+                <h3>CSS Fonts</h3>
+                <p>Published:
+                    <time datetime="2023-11-09">November 9, 2023</time>
+                </p>
+            </header>
+            <p>
+                This week we learnt about using fonts from Google Fonts and how we can now style text using CSS.
+            </p>
             <h3>Google Fonts</h3>
             <p>
                 A very common resource for development of all kinds is Google Fonts<sup><a
-                    href="#week45-references">[2]</a></sup>. The font you use for a website or system helps define its
+                    href="#week5-references">[1]</a></sup>. The font you use for a website or system helps define its
                 personality and helps people associate it with your brand. For example, think of Comic Sans which most
                 people associate with either Microsoft Word or Microsoft Paint.
             </p>
@@ -628,7 +664,7 @@
             <p>
                 To start using Ubuntu inside my CSS file I needed to add the the relevant import code to the top of the
                 CSS file. Which can be found on the Google Fonts website<sup><a
-                    href="#week45-references">[3]</a></sup>.
+                    href="#week5-references">[2]</a></sup>.
             </p>
             <p>
                 This tells the web browser to import the file add the specific URL. In this case, the font file
@@ -650,13 +686,13 @@
                 it would be very tedious. This is even harder to do if you maintain multiple CSS file like in a
                 larger website. This is what leads to some parts of a website looking older than others, it’s hard to
                 update the CSS values. An example of this is Google Advanced Search<sup><a
-                    href="#week45-references">[4]</a></sup>. It uses an older version of Google's design language and
+                    href="#week5-references">[3]</a></sup>. It uses an older version of Google's design language and
                 has not been updated to their modern design language like many of their other sites. To fix this we have
                 variables.
             </p>
             <p>
                 Variables are declared like any other property, usually in the root pseudo-element<sup><a
-                    href="#week45-references">[5]</a></sup> like:
+                    href="#week5-references">[4]</a></sup> like:
             </p>
             <p>
                 <code>
@@ -686,30 +722,10 @@
                 less code, and we only need to update the variables instead of cascading every element that needs
                 changed.
             </p>
-            <h3>Progress Snapshot</h3>
-            <div class="group-container">
-                <p class="group-item">
-                    These weeks I added the basic styling for the website as well as changed how the navigation menu
-                    looks. I have decided to adopt best practices and design the website to be mobile first. Meaning
-                    that
-                    the design for the website is made with a phone in mind and will be later adapted to the desktop as
-                    shown previously. I have also replaced instances of code in the journal with the &lt;code&gt;
-                    element
-                    so that they are displayed better.
-                </p>
-                <div class="group-item">
-                    <img alt="A screenshot of the Learning Journal, now styled."
-                         src="images/journal/week45/index.png"
-                         loading="lazy">
-                </div>
-
-            </div>
             <aside>
-                <a id="week45-references" class="nav"></a>
+                <a id="week5-references" class="nav"></a>
                 <h3>References</h3>
                 <ol>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">CSS
-                        values and units - Learn web development | MDN</a></li>
                     <li><a href="https://fonts.google.com/">Browse Fonts - Google Fonts</a></li>
                     <li>
                         <a href="https://fonts.google.com/knowledge/using_type/using_web_fonts_from_a_font_delivery_service">Using
