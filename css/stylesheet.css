@@ -387,6 +387,7 @@ td {
 
     .entry-nav a {
         text-align: center;
+        font-size: large;
     }
 
     .entry-nav li {
@@ -449,6 +450,10 @@ td {
 
     .desktop {
         display: unset;
+    }
+
+    .entry-nav a {
+        font-size: inherit;
     }
 
     .not-desktop {
